@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      </script>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+} 
+nav{
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%,  navy 100%);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  height: 95%;
+  
+}
+.header-logo {
+  height: 110%;
+  margin-left: 20px;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.grammar,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+  
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+  
+ 
+}
+
+.outerwrap {
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+opacity: 0.96;
+ height: 2000px;
+}
+    .wrapper {
+      padding-block: 3rem;
+      
+      width: min(60%, 70rem);
+      margin-inline: auto;
+      display: grid;
+      gap: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      height: 700px;
+      transition: scale 350ms ease, opacity 350ms linear;
+    
+    } 
+    .wrapper h1 {
+      text-align: center;
+    }
+ 
+.header2 > a {
+  display: flex;
+  align-items: center;
+  margin-left: 42%;
+  text-decoration: none;
+  font-size: 1.35em;
+  color: rgb(0, 0, 0);
+  
+}
+.header2 > a:hover {
+  text-decoration: underline;
+}
+.header3 {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+  background-color: aqua;
+text-decoration: none;
+  justify-content:space-evenly;
+  list-style: none;
+
+}
+
+.header3 a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+ 
+  letter-spacing: 1px;
+  
+}
+
+.header3 a:hover{
+  color: #111;
+  background: #fff;
+}
+.grid1 {
+      background-color: grey;
+      height: 1700px;
+      border: solid;
+      border-color: black;
+      padding: 20px;
+      line-height: 1.8rem;
+      margin-top: 100px;
+    }
+    li:hover {
+  text-decoration: underline;
+}
+    footer {
+  display: flex;
+  height: 300px;
+  background-color: rgb(179, 179, 179);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+       <img class="header-logo" src="/images/logo.png" alt="">
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active" href="/html/index.html">Home</a></li>
+      <li><a class="grammar" href="/html/grammar-home.html">Grammar</a></li>
+      <li><a class="vocab" href="">Vocabulary</a></li>
+      <li><a class="for-kids" href="/html/for-kids.html">For Kids</a></li>
+      <li><a class="lessons" href="">Lessons</a></li>
+   </ul>
+ </nav>
+ <div class="header3">
+  
+    <a href="/html/Powerpoint.html">Powerpoints</a>
+    <a href="">Speaking</a>
+    <a href="">Games</a>
+    <a href="">Crafts</a>
+</div>
+ <div class="header2">
+  <a href="https://www.paypal.com/donate/?business=DWYTJRPSUTDTU&no_recurring=0&currency_code=GBP">Make a Donation</a> </div>
+
+  <div class="outerwrap">
+    <div class="wrapper"> 
+
+      <div class="grid1">
+        <h1> Present Simple </h1>
+        <h3> Engblocks.com</h3>
+        <ul>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-positive-exercise-1.pdf"target="_blank">Present Simple — Positive — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-positive-exercise-2.pdf"target="_blank">Present Simple — Positive — Exercise 2</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-negative-exercise-1.pdf"target="_blank">Present Simple — Negative — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-with-to-be-negative-exercise-2.pdf"target="_blank">Present Simple — Negative — Exercise 2</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-negative-put-the-words-in-the-correct-order-exercise-1.pdf"target="_blank">Present Simple — Negative — Put the words in the correct order — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-yes-no-question-exercise-1.pdf"target="_blank">Present Simple — Yes/‌No question — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-yes-no-question-exercise-2.pdf"target="_blank">Present Simple — Yes/‌No question — Exercise 2</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-yes-no-question-do-vs-does.pdf"target="_blank">Present Simple — Yes/‌No question — do vs. does</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-questions-with-do-does-am-is-are-exercise-1.pdf"target="_blank">Present Simple — Questions with do, does, am, is, are — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-wh-question-exercise-1.pdf"target="_blank">Present Simple — Wh-question — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-wh-question-exercise-2.pdf"target="_blank">Present Simple — Wh-question — Exercise 2</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-wh-question-word-order.pdf"target="_blank">Present Simple — Wh-question — Word order</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-positive-have-has.pdf"target="_blank">Present Simple — Positive — have/‌has</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-negative-have-has-exercise-1.pdf"target="_blank">Present Simple — Negative — have/‌has — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-yes-no-question-do-vs-does.pdf"target="_blank">Present Simple — Yes/‌No question — do vs. does</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-questions-with-do-does-am-is-are-exercise-1.pdf"target="_blank">Present Simple — Questions with do, does, am, is, are — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/ending-s-in-the-present-simple-exercise-1.pdf"target="_blank">Ending -s in the Present Simple — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/ending-s-in-the-present-simple-exercise-2.pdf"target="_blank">Ending -s in the Present Simple — Exercise 2</a></li>
+          </ul>
+
+          <h3>LearnEnglishKids.org</h3>
+          <ul>
+          <li><a href="https://learnenglishkids.britishcouncil.org/sites/kids/files/attachment/grammar-practice-present-simple-and-present-continuous-worksheet.pdf"target="_blank">Present Simple and Continuous</a></li>
+          <li><a href="https://learnenglishkids.britishcouncil.org/sites/kids/files/attachment/grammar-practice-present-simple-and-present-continuous-2.pdf"target="_blank"></a>Present Simple and Continuous - Test</li>
+          <li><a href="https://learnenglishkids.britishcouncil.org/sites/kids/files/attachment/grammar-practice-reference-card-present-simple-and-present-continuous-2.pdf"target="_blank">Present Simple and Continuous - Reference Cards</a></li>
+          </ul>
+
+          <h3>LearnEnglishTeens.org</h3>
+          <ul>
+            <li><a href="https://learnenglishteens.britishcouncil.org/sites/teens/files/present_simple_-_exercises.pdf"target="_blank">Present Simple</a></li>
+          </ul>
+
+          <h3>EnglishPractice.com</h3>
+          <ul>
+
+          <li><a href="https://www.english-practice.at/b1/grammar/tenses/t-042-present-tense.pdf"target="_blank">Present Simple and Continuous B1</a></li>
+          <li><a href="https://www.english-practice.at/b1/grammar/tenses/t-004-present-tense.pdf"target="_blank">Present Simple and Continuous-2 B1</a></li>
+          
+        </ul>
+        <h3>More</h3>
+        <ul>
+          <li><a href="http://centros4.pntic.mec.es/~deprac15/iglessandra/sexto/PRESENT%20SIMPLE,%20superguay.pdf"target="_blank">Present Simple - Coloured pdf handout</a></li>
+          <li><a href="https://englishforeveryone.org/PDFs/Present_Tense_Exercise_9.pdf"target="_blank">Simple present tense - pdf exercises</a></li>
+          <li><a href="http://www.english-area.com/paginas/presentesimpleE3.pdf"target="_blank">Worksheet - interrogative pdf</a></li>
+          <li><a href="https://bbresources.s3.amazonaws.com/sites/3/Grammar2-PresentSimple_2624.pdf"target="_blank">Present simple - pdf exercises</a></li>
+          <li><a href="https://xioenglish.files.wordpress.com/2014/10/present-simple.pdf"target="_blank">Present simple - handout pdf</a></li>
+          <li><a href="http://zspprabuty.pl/dokumenty/lo/materialy/angielski/klasa2/present%20simple.pdf"target="_blank">Affirmative, negative, questions</a></li>
+        </ul>
+        
+       
+      </div>
+    </div>
+      
+      
+  </div>
+  
+</body>
+</html>

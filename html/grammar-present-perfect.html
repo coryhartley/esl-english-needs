@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      </script>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+} 
+nav{
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%,  navy 100%);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  height: 105%;
+ 
+
+  
+}
+.header-logo {
+  height: 110%;
+  
+
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+  
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+  
+ 
+}
+
+.outerwrap {
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+opacity: 0.96;
+ height: 2400px;
+}
+    .wrapper {
+      padding-block: 3rem;
+      
+      width: min(60%, 70rem);
+      margin-inline: auto;
+      display: grid;
+      gap: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      height: 700px;
+      transition: scale 350ms ease, opacity 350ms linear;
+    
+    } 
+ 
+.header2 > a {
+  display: flex;
+  align-items: center;
+  margin-left: 42%;
+  text-decoration: none;
+  font-size: 1.35em;
+  color: rgb(0, 0, 0);
+  
+}
+.header2 > a:hover {
+  text-decoration: underline;
+}
+.header3 {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+  background-color: aqua;
+text-decoration: none;
+  justify-content:space-evenly;
+  list-style: none;
+
+}
+
+.header3 a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+ 
+  letter-spacing: 1px;
+  
+}
+
+.header3 a:hover{
+  color: #111;
+  background: #fff;
+}
+.grid1 {
+      background-color: grey;
+      height: 1900px;
+      border: solid;
+      border-color: black;
+      padding: 20px;
+      line-height: 1.8rem;
+      margin-top: 100px; 
+}
+
+.grid1>h1 {
+  text-align: center;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  display: flex;
+  height: 300px;
+  background-color: rgb(179, 179, 179);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+       <img class="header-logo" src="/images/logo.png" alt="">
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active" href="/html/index.html">Home</a></li>
+      <li><a class="grammar" href="/html/grammar-home.html">Grammar</a></li>
+      <li><a class="vocab" href="">Vocabulary</a></li>
+      <li><a class="for-kids" href="/html/for-kids.html">For Kids</a></li>
+      <li><a class="lessons" href="">Lessons</a></li>
+   </ul>
+ </nav>
+ <div class="header3">
+  
+    <a href="/html/Powerpoint.html">Powerpoints</a>
+    <a href="">Speaking</a>
+    <a href="">Games</a>
+    <a href="">Crafts</a>
+</div>
+ <div class="header2">
+  <a href="https://www.paypal.com/donate/?business=DWYTJRPSUTDTU&no_recurring=0&currency_code=GBP">Make a Donation</a></div>
+
+  <div class="outerwrap">
+    <div class="wrapper"> 
+      <div class="grid1">
+        <h1>Present Perfect</h1>
+        <h3>EngBlocks.com</h3>
+        <ul>
+          
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-positive-exercise-1.pdf" target="_blank">Present Perfect — Positive — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-positive-make-the-sentence.pdf" target="_blank">Present Perfect — Positive — Make the sentence</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-have-vs-has.pdf" target="_blank">Present Perfect — have vs. has</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-positive-say-what-you-have-already-done-exercise-1.pdf" target="_blank">Present Perfect — Positive — Say what you have already done — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-positive-say-what-people-have-already-done-exercise-3.pdf" target="_blank">Present Perfect — Positive — Say what people have already done — Exercise 3</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-negative-exercise-1.pdf" target="_blank">Present Perfect — Negative — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-positive-and-negative-sentences.pdf" target="_blank">Present Perfect — Positive and negative sentences</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-already-just-yet.pdf" target="_blank">Present Perfect — already, just, yet</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-since-for.pdf" target="_blank">Present Perfect — since/‌for</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-for-since-just-yet-already.pdf" target="_blank">Present Perfect — for, since, just, yet, already</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-ever-never.pdf" target="_blank">Present Perfect — ever/‌never</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-time-markers.pdf" target="_blank">Present Perfect — Time markers</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-yes-no-question.pdf" target="_blank">Present Perfect — Yes/‌No question</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-wh-question-exercise-1.pdf" target="_blank">Present Perfect — Wh-question — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-put-the-wh-question-to-the-word-phrase-in-bold.pdf" target="_blank">Present Perfect — Put the Wh-question to the word/‌phrase in bold</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-sentence-formation-mixed.pdf" target="_blank">Present Perfect — Sentence formation — Mixed</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-perfect-vs-past-simple-exercise-1.pdf" target="_blank">Present Perfect vs. Past Simple</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/past-participle-of-irregular-verbs-exercise-1.pdf" target="_blank">Past Participle of irregular verbs — Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/past-participle-of-irregular-verbs-exercise-2.pdf" target="_blank">Past Participle of irregular verbs — Exercise 2</a></li>
+        </ul>
+        <h3>LearnEnglishKids.org</h3>
+        <ul>
+          <li><a href="https://learnenglishkids.britishcouncil.org/sites/kids/files/attachment/grammar-practice-present-perfect-experiences-worksheet.pdf" target="_blank">Present Perfect - Experiences</a></li>
+          <li><a href="https://learnenglishkids.britishcouncil.org/sites/kids/files/attachment/grammar-practice-present-perfect-experiences.pdf" target="_blank">Present Perfect - Grammar Test</a></li>
+        </ul>
+
+        <h3>LearnEnglishTeens.org</h3>
+          <ul>
+            <li><a href="https://learnenglishteens.britishcouncil.org/sites/teens/files/gs_present_perfect_simple_and_continuous_-_exercises_0.pdf" target="_blank">Present Perfect - Simple and Continuous</a></li>
+          </ul>
+
+
+
+        <h3>More</h3>
+        <ul>
+        <li><a href="http://cubictalk.com/cubicboard/matrials/Grammar-Practice-Worksheets/7.Present-Perfect.pdf" target="_blank">Present Perfect Complete Pack (15)</a></li>
+        <li><a href="https://englishforeveryone.org/PDFs/Present_Tense_Exercises_27and28.pdf" target="_blank">Present Perfect</a></li>
+        <li><a href="https://www.perfect-english-grammar.com/support-files/present_perfect_form_mixed_exercise_1.pdf" target="_blank">Affirmative, Negative, Questions</a></li>
+        <li><a href="https://englishforeveryone.org/PDFs/Present_Tense_Exercise_29.pdf" target="_blank">Present Perfect 2</a></li>
+        <li><a href="https://englishforeveryone.org/PDFs/Present_Tense_Exercise_30.pdf" target="_blank">Present Perfect 3</a></li>
+        <li><a href="https://englishforeveryone.org/PDFs/Present_Tense_Exercise_32.pdf" target="_blank">Present Perfect 4</a></li>
+        <li><a href="https://englishforeveryone.org/PDFs/Present_Tense_Exercise_33.pdf" target="_blank">Present Perfect 5</a></li>
+        <li><a href="https://www.english-grammar.at/worksheets/tenses/t24.pdf" target="_blank">Past Simple or Present Perfect</a></li>
+        <li><a href="https://www.english-grammar.at/worksheets/tenses/t25.pdf" target="_blank">Past Simple or Present Perfect 2</a></li>
+        <li><a href="https://www.english-practice.at/b1/grammar/tenses/t-036-past-present-perfect-simple.pdf" target="_blank">Past/ Present Perfect</a></li>
+        <li><a href="https://www.english-practice.at/b1/grammar/tenses/t-027-past-present-perfect-simple.pdf" target="_blank">Past/ Present Perfect 2</a></li>
+        <li><a href="http://www.english-area.com/paginas/psimplevspperfectoE1.pdf" target="_blank">Past or Present?</a></li>
+        <li><a href="https://englishforeveryone.org/PDFs/Present%20Perfect%20Tense.pdf" target="_blank">Present Perfect Tense</a></li>
+        <li><a href="https://www.allthingsgrammar.com/uploads/2/3/2/9/23290220/atg-quiz-presentperfect.pdf" target="_blank">Present Perfect Quiz</a></li>
+        <li><a href="https://www.englishwsheets.com/present%20perfect%20tense%20just%20already%20yet%20esl%20printable%20exercises%20worksheet.pdf" target="_blank">Just, Already, Yet</a></li>
+        <li><a href="https://www.grammarbank.com/support-files/present-perfect-tense-already-just-yet.pdf" target="_blank">Already/Just/Yet</a></li>
+        <li><a href="https://www.uv.mx/personal/damorales/files/2013/01/Present-Perfect-Tense.pdf" target="_blank">Already, Yet, Since, For</a></li>
+        <li><a href="https://www.englishclub.com/esl-worksheets/grammar/EC_grammar-for-since-PI_with-KEY.pdf" target="_blank">For or Since</a></li>
+        <li><a href="http://www.allthingsgrammar.com/uploads/2/3/2/9/23290220/atg-worksheet-forsince.pdf" target="_blank">For or Since pdf</a></li>
+        <li><a href="https://dum.bpa-brno.cz/grant/VY_22_INOVACE_OYI9.pdf" target="_blank">For/Since</a></li>
+      </ul>
+        
+          
+        
+      </div>
+      
+    </div>
+      
+      
+  </div>
+  
+</body>
+</html>
