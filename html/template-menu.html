@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eslenglishneeds</title>
+  <link rel="icon" href="/IMAGES/logo.png">
+  <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      </script>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+} 
+nav{
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%,  navy 100%);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  height: 95%;
+  
+}
+.header-logo {
+  height: 110%;
+  margin-left: 20px;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.grammar,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.header2 > a {
+  display: flex;
+  align-items: center;
+  margin-left: 45%;
+  text-decoration: none;
+  font-size: 1.35em;
+  color: rgb(0, 0, 0);
+  
+}
+.header2 > a:hover,
+.header3 > a:hover {
+  text-decoration: underline;
+}
+
+.header3 {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+  background-color: aqua;
+text-decoration: none;
+  justify-content:space-evenly;
+  list-style: none;
+
+}
+
+.header3 a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+ 
+  letter-spacing: 1px;
+  
+}
+
+.header3 a:hover{
+  color: #111;
+  background: #fff;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+  
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+  
+  
+ 
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+   
+
+
+.outerwrap {
+
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+ height: 1600px;
+ padding-top: 100px;
+}
+    .wrapper {
+      padding-block: 2rem;
+      
+      width: min(70%, 70rem);
+      margin-inline: auto;
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      
+     
+      height: 700px;
+     
+    }
+    .grid1, .grid2, .grid3, .grid4, .grid5, .grid6, 
+    .grid7, .grid8, .grid9, .grid10, .grid11, .grid12 {
+      background-color: grey;
+      height: 140px;
+      border: solid;
+      border-color: black;
+      padding: 20px;
+      border-radius: 20px;
+    color: black;
+      padding-top: 10px;
+      
+
+    }
+  
+   
+
+ 
+
+
+
+
+@media screen and (max-width: 43em) {
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding-top: 600px;
+  }
+}
+footer {
+  display: flex;
+  height: 300px;
+  background-color: rgb(179, 179, 179);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+       <img class="header-logo" src="/IMAGES/logo.png" alt="">
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active" href="/html/index.html">Home</a></li>
+      <li><a class="grammar" href="/html/grammar-home.html">Grammar</a></li>
+      <li><a class="vocab" href="/html/cambridge-tests.html">Cambridge Tests</a></li>
+      <li><a class="for-kids" href="/html/for-kids.html">For Kids</a></li>
+      <li><a class="lessons" href="">Lessons</a></li>
+   </ul>
+ </nav>
+ <div class="header3">
+  
+    <a href="/html/Powerpoint.html">Powerpoints</a>
+    <a href="">Speaking</a>
+    <a href="">Games</a>
+    <a href="">Crafts</a>
+</div>
+   <div class="header2">
+    <a href="https://www.paypal.com/donate/?business=DWYTJRPSUTDTU&no_recurring=0&currency_code=GBP">Make a Donation</a>
+   </div>
+ 
+  <div class="outerwrap">
+    <div id="wrapper" class="wrapper">
+      
+      
+      <a href=><div class="grid2">    
+        <h1></h1>
+        
+      </div></a>
+
+      <a href=""><div class="grid3">
+        <h1></h1>
+      </div></a>
+
+       <a href=""> <div class="grid4">
+        <h1></h1></div></a>
+     
+      <a href=""> <div class="grid5">
+        <h1></h1></div></a>
+        
+     <a href=""> <div class="grid6">
+        <h1></h1></div></a>
+      
+      <a href=""> <div class="grid7">
+       <h1></h1></div></a>
+      
+      
+       <a href=""> <div class="grid8">
+        <h1></h1></div></a>
+     
+     
+        
+    </div>
+
+  </div>
+
+</body>
+</html>
