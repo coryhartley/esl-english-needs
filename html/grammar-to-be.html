@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eslenglishneeds</title>
+  <link rel="icon" href="/IMAGES/logo.png">
+  <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      </script>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+} 
+nav{
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%,  navy 100%);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  height: 95%;
+  
+}
+.header-logo {
+  height: 110%;
+  margin-left: 20px;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.grammar,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+  
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+  
+ 
+}
+
+.outerwrap {
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+opacity: 0.96;
+height: 1800px;
+}
+    .wrapper {
+      padding-block: 3rem;
+      
+      width: min(60%, 70rem);
+      margin-inline: auto;
+      display: grid;
+      gap: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      height: 700px;
+      transition: scale 350ms ease, opacity 350ms linear;
+    
+    } 
+    .wrapper h1 {
+      text-align: center;
+    }
+ 
+.header2 > a {
+  display: flex;
+  align-items: center;
+  margin-left: 42%;
+  text-decoration: none;
+  font-size: 1.35em;
+  color: rgb(0, 0, 0);
+  
+}
+.header2 > a:hover {
+  text-decoration: underline;
+}
+.header3 {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+  background-color: aqua;
+text-decoration: none;
+  justify-content:space-evenly;
+  list-style: none;
+
+}
+
+.header3 a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+ 
+  letter-spacing: 1px;
+  
+}
+
+.header3 a:hover{
+  color: #111;
+  background: #fff;
+}
+.grid1 {
+      background-color: grey;
+      height: 1390px;
+      border: solid;
+      border-color: black;
+      padding: 20px;
+      line-height: 1.8rem;
+      margin-top: 100px;
+    }
+
+    li:hover {
+  text-decoration: underline;
+}
+    footer {
+  display: flex;
+  height: 300px;
+  background-color: rgb(179, 179, 179);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+       <img class="header-logo" src="/images/logo.png" alt="">
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active" href="/html/index.html">Home</a></li>
+      <li><a class="grammar" href="/html/grammar-home.html">Grammar</a></li>
+      <li><a class="vocab" href="/html/cambridge-tests.html">Cambridge Tests</a></li>
+      <li><a class="for-kids" href="/html/for-kids.html">For Kids</a></li>
+      <li><a class="lessons" href="">Lessons</a></li>
+   </ul>
+ </nav>
+ <div class="header3">
+  
+  <a href="/html/Powerpoint.html">Powerpoints</a>
+  <a href="/html/blog-home.html">Blog</a>
+  <a href="/html/reading-home.html">Reading</a>
+  <a href="">Crafts</a>
+</div>
+ <div class="header2">
+  <a href="https://www.paypal.com/donate/?business=DWYTJRPSUTDTU&no_recurring=0&currency_code=GBP">Make a Donation</a> </div>
+
+  <div class="outerwrap">
+    <div class="wrapper"> 
+
+      <div class="grid1">
+        <h1> To Be </h1>
+        <h3>Engblocks.com</h3>
+        <ul>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-with-to-be-positive-exercise-1.pdf"target="_blank">Present - To Be - Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-with-to-be-positive-exercise-2.pdf"target="_blank">Present Tense - To Be - Exercise 2</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-with-to-be-positive-exercise-3.pdf"target="_blank">Present Tense - To Be - Exercise 3</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-with-to-be-negative-exercise-1.pdf"target="_blank">Present Tense - To Be Negative - Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-with-to-be-negative-exercise-2.pdf"target="_blank">Present Tense - To Be Negative - Exercise 2</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-with-to-be-yes-no-question-exercise-1.pdf"target="_blank">Present Tense - To Be Question Yes/No - Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-with-to-be-yes-no-question-exercise-2.pdf"target="_blank">Present Tense - To Be Question Yes/No - Exercise 2</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-with-to-be-wh-questions-exercise-1.pdf"target="_blank">Present Tense - To Be Open Questions - Exercise 1</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/present-simple-with-to-be-wh-questions-exercise-2.pdf"target="_blank">Present Tense - To Be Open Questions - Exercise 2</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/past-simple-with-to-be-was-were-positive.pdf"target="_blank">Past Simple with to be (was/‌were) — Positive</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/past-simple-with-to-be-was-were-positive-exercise-2.pdf"target="_blank">Past Simple with to be (was/‌were) — Positive — Exercise 2</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/past-simple-with-to-be-wasnt-werent-negative.pdf"target="_blank">Past Simple with to be (wasn’t/‌weren’t) — Negative</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/past-simple-with-to-be-wasnt-werent-negative-short-forms.pdf"target="_blank">Past Simple with to be (wasn’t/‌weren’t) — Negative — Short forms</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/past-simple-with-to-be-was-were-yes-no-questions.pdf"target="_blank">Past Simple with to be (was/‌were) — Yes/‌No questions</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/past-simple-with-to-be-was-were-wh-questions.pdf"target="_blank">Past Simple with to be (was/‌were) — Wh-questions</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/past-simple-with-to-be-was-were-wh-questions-put-the-words-in-the-correct-order.pdf"target="_blank">Past Simple with to be (was/‌were) — Wh-questions — Put the words in the correct order</a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/am-is-are-was-were-exercise-1.pdf"target="_blank">Am, is, are, was, were </a></li>
+          <li><a href="https://www.engblocks.com/media/grammar/worksheets/pdf/black/tenses/am-is-are-was-were-will-be-exercise-1.pdf"target="_blank">Am, is, are, was, were, will be</a></li>
+       
+          
+          
+        </ul>
+        <h3>LearnEnglishKids.org</h3>
+        <ul>
+          <li><a href="https://learnenglishkids.britishcouncil.org/sites/kids/files/attachment/grammar-practice-present-simple-verb-to-be-worksheet.pdf"target="_blank">Present Simple 'To be'</a></li>
+          <li><a href="https://learnenglishkids.britishcouncil.org/sites/kids/files/attachment/grammar_practice_present-simple-to-be-final.pdf"target="_blank">Present Tense 'To be' - Test</a></li>
+          <li><a href="https://learnenglishkids.britishcouncil.org/sites/kids/files/attachment/grammar-practice-past-simple-verb-to-be-worksheet.pdf"target="_blank">Past Simple 'To Be' Worksheet</a></li>
+          <li><a href="https://learnenglishkids.britishcouncil.org/sites/kids/files/attachment/grammar_practice_past_simple_verb_to_be_final.pdf"target="_blank">Past Simple 'To Be' Test</a></li>
+        </ul>
+
+        <h3>LearnEnglishTeens.org</h3>
+        <ul>
+          <li><a href="https://learnenglishteens.britishcouncil.org/sites/teens/files/gs_to_be_-_exercises_0.pdf"target="_blank">'To be' - Present and Past</a></li>
+         </ul>
+       
+        <h3>Other</h3>
+        <ul>
+          <li><a href="https://www.maestralidia.com/essere%20exerc%20by%20me.pdf"target="_blank">To be - present simple exercises</a></li>
+          <li><a href="https://www.englishwsheets.com/to-be-1.html"target="_blank">Verb to be present - handout</a></li>
+          <li><a href="https://www.grammarism.com/verb-to-be-worksheets/"target="_blank">'To be' worksheets</a></li>
+          <li><a href="https://www.grammarism.com/verb-to-be-negative-worksheets/"target="_blank">'To be' Negative Worksheets</a></li>
+          <li><a href="https://eduteach.es/worksheets-grammar.pdf"target="_blank">Worksheet 175 pages </a></li>
+        </ul>
+      </div>
+    </div>
+      
+      
+  </div>
+
+</body>
+</html>
