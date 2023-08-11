@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eslenglishneeds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="icon" href="/IMAGES/logo.png"> 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+       </script>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+
+} 
+nav{
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%,  navy 100%);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  height: 105%;
+ 
+
+  
+}
+.header-logo {
+  height: 110%;
+  
+
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+  
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+  
+ 
+}
+.top-div {
+  height: 390px;
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+  align-items: center;
+  
+}
+.top-div> div {
+  padding-top: 65px;
+  text-align: center;
+  
+  
+}
+.top-div h1 {
+  font-size: 50px;
+}
+.top-div img {
+  height: 80px;
+}
+.page {
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+}
+
+.outerwrap2 {
+ margin: 100px;
+ margin-top: 80px;
+ height: 3300px;
+ font-family: 'Roboto Condensed';
+
+
+ 
+}
+.outerwrap3 {
+ 
+  height: 1800px;
+  border-left: solid rgb(211, 211, 211);
+ 
+  
+
+}
+.wrap3 {
+  height: 300px;
+  width: 200px;
+  right: 0;
+  border-style: solid ;
+  
+margin: 33px;
+  padding: 40px;
+  
+  
+}
+ 
+.header2 > a {
+  display: flex;
+  align-items: center;
+  margin-left: 42%;
+  text-decoration: none;
+  font-size: 1.35em;
+  color: rgb(0, 0, 0);
+  
+}
+.header2 > a:hover {
+  text-decoration: underline;
+}
+.header3 {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+  background-color: aqua;
+text-decoration: none;
+  justify-content:space-evenly;
+  list-style: none;
+
+}
+
+.header3 a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+ 
+  letter-spacing: 1px;
+  
+}
+
+.header3 a:hover{
+  color: #111;
+  background: #fff;
+}
+
+    
+
+.wrap3 li:hover {
+  text-decoration: underline;
+}
+footer {
+  display: flex;
+  height: 500px;
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.one h4 {
+  display: inline;
+}
+.wrapper p {
+  font-size: 20px;
+  opacity: 0.66;
+}
+.one, .two, .three, .four, .five {
+  margin-top: 60px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+h2{
+  margin-top: 20px;
+}
+p{
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 20px;
+}
+img {
+  margin-top: 20px;
+}
+h3 {
+  margin-top: 20px;
+}
+.five iframe{
+  margin-top: 10px;
+  height: 150px;
+}
+@media screen and (max-width: 800px){
+  .page {
+  display: grid;
+  grid-template-columns: 1fr 0px;
+
+}
+.outerwrap2 {
+ margin: 30px;
+ 
+}
+}
+img {
+  height: 550px;
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+       <img class="header-logo" src="/images/logo.png" alt="">
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active" href="/html/index.html">Home</a></li>
+      <li><a class="grammar" href="/html/grammar-home.html">Grammar</a></li>
+      <li><a class="vocab" href="/html/cambridge-tests.html">Cambridge Tests</a></li>
+      <li><a class="for-kids" href="/html/for-kids.html">For Kids</a></li>
+      <li><a class="lessons" href="/html/lessons.html">Lessons</a></li>
+   </ul>
+ </nav>
+ <div class="header3">
+  
+  <a href="/html/Powerpoint.html">Powerpoints</a>
+    <a href="/html/blog-home.html">Blog</a>
+    <a href="/html/reading-home.html">Reading</a>
+    <a href="/html/crafts.html">Crafts</a>
+  </div>
+  <div class="header2">
+   <a href="https://www.paypal.com/donate/?business=DWYTJRPSUTDTU&no_recurring=0&currency_code=GBP">Make a Donation</a>
+  </div>
+  <div class="top-div">
+    <div>
+      <h1>How to Learn Phrasal Verbs</h1>
+      <h2>Study Strategy for Phrasal Verbs</h2>
+      <img src="/IMAGES/logo.png" alt="">
+    </div>
+    
+  </div>
+  <div class="page">
+    
+ 
+  
+
+   <div class="outerwrap2">
+    <img src="/IMAGES/phrasal verbs.webp" alt=".">
+    <div class="wrapper">
+      <p>Learning phrasal verbs is one of the most challenging tasks for English learners. Teachers
+         can use this introducing phrasal verbs lesson plan to help students become more familiar 
+         with phrasal verbs and start building phrasal verb vocabulary. This phrasal verbs reference 
+         list will also get you started with short definitions of approximately 100 of the most common 
+         phrasal verbs. Finally, there are a 
+        wide variety of phrasal verb resources on the site to help you learn new phrasal verbs.</p>
+    </div>
+    <div class="one">
+      <h2>Phrasal verbs quickly become confusing for a few reasons:</h2>
+      <ul>
+        <li><p>One main verb many prepositions - Just think of the verb 'to get', here's a 
+          short list: get into, get through, get to, get into, get by, etc.</p></li>
+        <li><p>One phrasal verb, different meanings - Consider the phrasal verb 'pick up': pick up
+          = learn, pick up = physically fetch, pick up = purchase, etc.</p></li>
+        <li><p>One phrasal verb, literal, figurative and idiomatic meanings - 
+          How about the verb 'put up': put up / literal = physically place on a shelf,
+           put up / figurative = provide a place to sleep, put up / idiomatic = deal with a situation</p></li>
+        <li><p>Separable or inseparable? - Look after - inseparable / look over - separable. 
+          It's very difficult to learn which phrasal verbs separate and which don't!</p></li>
+      </ul>
+      <p>Let's start with the introductory list of problem areas for phrasal verbs from above. 
+        For each phrasal verb you learn.</p>
+
+    </div>
+    <div>
+      
+      <h2>Ask yourself these four questions:</h2>
+      <ul>
+        <li><p>1. Which other phrasal verbs do I know that begin with this main verb?</p></li>
+        <li><p>2. What is the literal meaning of this phrasal verb, the figurative meaning, and the
+           idiomatic meaning? - Not all phrasal verbs have multiple meanings, but many do!</p></li>
+        <li><p>3. Is this phrasal verb separable or inseparable?
+        </p></li>
+        <li><p>4. Can I write (or speak) a few example sentences with this phrasal verb?</p></li>
+
+      </ul>
+      <p>Here's a look at 5 common phrasal verbs. It's a good list to start with, and it will
+         help you learn to consider these various factors when learning phrasal verbs. I'll 
+         provide answers on each of the questions (in a shortened form). When you are done,
+          use the example form to study on your own. You can either copy the form onto a 
+          piece of paper, or copy and paste into a new document. Perhaps you can even save 
+          the document with multiple blank entries so you 
+        can continue to use this method to learn phrasal verbs. Make your own phrasal verb dictionary!
+      </p>Note: Not all phrasal verbs with other prepositions are listed for 
+      each main verb. That would be impossible! Try to think of as many 
+      phrasal verbs with other prepositions as you can for each of your own entries.
+      <p>
+
+      </p>
+      
+      
+
+
+    </div>
+
+    <div>
+      
+      <h2>Phrasal Verb: Get Into</h2>
+      <ul>
+        <li><p>Other phrasal verbs with this verb? get to,
+           get by, get through, get over, get at, get away with</p></li>
+        <li><p>Literal, figurative, idiomatic meaning?Literal: to open a box, drawer or other container
+          Figurative: to discuss something, Idiomatic: to enjoy</p></li>
+        <li><p>Separable or Inseparable? Inseparable</p></li>
+        <li><p>Example sentences:I used a key to get into the house.
+          Let's get into the reasons why we're going to win this case. He really got into the concert!</p></li>
+      </ul>
+
+      <h2>Phrasal Verb: Look Forward To</h2>
+      <ul>
+        <li><p>Other phrasal verbs with this verb? look away, look through, 
+          look to, look at, look over</p></li>
+        <li><p>Literal, figurative, idiomatic meaning? Literal: To look at something in 
+          the front (not used often) Figurative: To eagerly anticipate</p></li>
+        <li><p>Separable or Inseparable? Inseparable</p></li>
+        <li><p>Example sentences: I look forward to seeing you soon.Susan looks forward to her vacation in July.</p></li>
+      </ul>
+
+      <h2>Phrasal Verb: Put Off</h2>
+      <ul>
+        <li><p>Other phrasal verbs with this verb? put on, put over, put up, put through, put away</p></li>
+        <li><p>Literal, figurative, idiomatic meaning? Figurative: to postpone something Idiomatic: to make someone not like</p></li>
+        <li><p>Separable or Inseparable? Separable</p></li>
+        <li><p>Example sentences: Let's put the meeting off until next week.Her attitude put me off.</p></li>
+      </ul>
+
+      <h2>Phrasal Verb: Make Out</h2>
+      <ul>
+        <li><p>Other phrasal verbs with this verb? make to, make through, make up, make off</p></li>
+        <li><p>Literal, figurative, idiomatic meaning? Figurative: to see in the distance, Idiomatic: to kiss a lot</p></li>
+        <li><p>Separable or Inseparable? Figurative: Separable, Idiomatic: Inseparable (does not take an object)</p></li>
+        <li><p>Example sentences: Can you make the island out in the distance? They made out for thirty minutes. It was disgusting!.</p></li>
+      </ul>
+
+      <h2>Phrasal Verb: Take Off</h2>
+      <ul>
+        <li><p>Other phrasal verbs with this verb? take up, take over, take to, take in</p></li>
+        <li><p>Literal, figurative, idiomatic meaning? Literal: to disrobe - take clothing off your body</p></li>
+        <li><p>Separable or Inseparable? Separable (Figurative: Inseparable)</p></li>
+        <li><p>Example sentences: I took my coat off and entered the room.
+          The new products took off. We sold more than 300,000 in just one month! I need to take some time off work.</p></li>
+      </ul>
+
+
+
+
+     
+      
+    </div>
+
+    
+    <div class="six">
+      <h2>Check out more articles to help you learn English:</h2>
+      <ul>
+        <li><a href="/html/learn-english-easy.html">5 Easiest Ways to Learn a Language</a></li>
+      
+      </ul>
+    </div>
+    <div>
+      <a href="/html/learn-english-easy.html">Back to top</a>
+    
+    </div>
+      
+      
+      
+   </div>
+   <div class="outerwrap3">
+    <div class="wrap3">
+      <h3>Grammar</h3>
+      <ul>
+        <li><a href="/html/grammar-to-be.html">To be</a></li>
+        <li><a href="/html/grammar-tenses.html">Tenses</a></li>
+        <li><a href="/html/grammar-conditionals.html">Conditionals</a></li>
+        <li><a href="/html/grammar-passive-voice.html">Passive voice</a></li>
+        <li><a href="/html/grammar-adverb.html">Adverbs</a></li>
+        <li><a href="/html/grammar-adjectives.html">Comparatives</a></li>
+        <li><a href="/html/grammar-prepositions.html">In, an, at</a></li>
+        <li><a href="/html/grammar-present-perfect.html">For, since</a></li>
+        <li><a href="/html/grammar-clauses.html">Clauses</a></li>
+        <li><a href="/html/grammar-linkers.html">Connectors</a></li>
+
+      </ul>
+      
+      
+    </div>
+    <div class="outerwrap3">
+      <div class="wrap3">
+        <h3>Powerpoints</h3>
+        <ul>
+          <li><a href="/html/Powerpoint.html">For kids ppt</a></li>
+          <li><a href="/html/Powerpoint.html">Games ppt</a></li>
+          <li><a href="/html/Powerpoint.html">Vocabulary ppt</a></li>
+          <li><a href="/html/Powerpoint.html">Grammar ppt</a></li>
+          <li><a href="/html/Powerpoint.html">Verbs ppt</a></li>
+          <li><a href="/html/Powerpoint.html">Cambridge ppt</a></li>
+          <li><a href="/html/Powerpoint.html">Speaking ppt</a></li>
+        
+  
+        </ul>
+        
+        
+      </div>
+    <div class="wrap3">
+      <a href="/html/blog-home.html">Back to Articles</a>
+    </div>
+   </div>
+  </div>
+  <footer></footer>
+  
+</body>
+</html>
