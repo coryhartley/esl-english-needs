@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>eslenglishneeds</title>
   <link rel="icon" href="/IMAGES/logo.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/CSS/nav.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <script>
         function reveal() {
@@ -28,134 +28,13 @@
       window.addEventListener("scroll", reveal);
       </script>
   <style>
-    *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-} 
-nav{
-  display: flex;
-  height: 120px;
-  width: 100%;
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%,  navy 100%);
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px 0 100px;
-  flex-wrap: wrap;
   
-
-}
-nav .logo{
-  height: 95%;
-  
-}
-.header-logo {
-  height: 110%;
-  margin-left: 20px;
-}
-nav ul{
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-nav ul li{
-  margin: 0 5px;
-}
-nav ul li a{
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
 nav ul li a.active,
 nav ul li a:hover{
   color: #111;
   background: #fff;
 }
-nav .menu-btn i{
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-}
-input[type="checkbox"]{
-  display: none;
-}
-@media (max-width: 1100px){
-  nav{
-    padding: 0 40px 0 50px;
-  }
-   .top-div{
-   max-width: fit-content;
-   
-    
-  }
-  .wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 60%;
-    min-height: 1350px;
-  
-    
-  }
-  .wrapper a>div {
-   max-height: 120px;
-  }
-  
-  
-  .wrapper a>div {
-   max-height: 260px;
-  }
-}
-@media (max-width: 920px) {
-  nav .menu-btn i{
-    display: block;
-  }
-  #click:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
-  nav ul{
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background: #111;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  #click:checked ~ ul{
-    left: 0;
-  }
-  nav ul li{
-    width: 100%;
-    margin: 40px 0;
-  }
-  nav ul li a{
-    width: 100%;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #click:checked ~ ul li a{
-    margin-left: 0px;
-  }
-  nav ul li a.active,
-  nav ul li a:hover{
-    background: none;
-    color: cyan;
-  }
 
- 
-}
 
 .top {
   display: grid;
@@ -178,7 +57,7 @@ input[type="checkbox"]{
 .outerwrap {
   background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
 opacity: 0.96;
- height: 3200px;
+ height: 1600px;
 }
     .wrapper {
       padding-block: 7rem;
@@ -232,7 +111,7 @@ opacity: 0.96;
       padding-top: 20px;
       border-radius: 10px;
       height: 250px;
-      background-image: url(/IMAGES/dictionary.png);
+      background-image: url(/IMAGES/cambridge.jpeg);
       background-size: cover;
   cursor: pointer;
   border: solid;
@@ -261,18 +140,16 @@ opacity: 0.96;
 
 
 
-@media screen and (max-width: 43em) {
+@media screen and (max-width: 53em) {
  
   .top-div {
-   background-position: center;
+   display: none;
 
 
   }
   
   
- .d4, .d5, .d8 {
-  background-position: center;
- }
+ 
 
 }
 
@@ -280,50 +157,13 @@ opacity: 0.96;
   .top {
     background-size: contain;
     height: min-content;
+    
   }
 
 }
 
-.header3 {
-  display: flex;
-  width: 100%;
-  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
-  background-color: aqua;
-text-decoration: none;
-  justify-content:space-evenly;
-  list-style: none;
 
-  
 
-}
-
-.header3 a{
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 8px 15px;
- 
-  letter-spacing: 1px;
-  
-}
-
-.header3 a:hover{
-  color: #111;
-  background: #fff;
-}
-.header2 a{
-  display: flex;
-  align-items: center;
-  margin-left: 42%;
-  text-decoration: none;
-  font-size: 1.35em;
-  color: rgb(0, 0, 0);
-  
-}
-.header2 > a:hover {
-  text-decoration: underline;
-}
 .top-div {
   background-color: white;
   padding: 25px;
@@ -346,106 +186,14 @@ text-decoration: none;
 .outerwrap p  {
   background-color: gray;
 }
-footer {
-  display: flex;
-  height: 300px;
-  background-color: rgb(179, 179, 179);
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.footer-div-1 {
-  padding-top: 41%;
-  padding-left: 1%;
-}
-.body {
-  display: grid;
-  gap: 5rem;
-  grid-template-rows: repeat( 1fr);
-      
-}
-.body div {
-  height: 500px;
-}
-.body button {
-  width: fit-content;
-  cursor: pointer;
-  padding: 5px;
-  border: solid 2px;
-}
-.d1 {
-  background-image: url(/IMAGES/powerpoint.gif);
- background-size: cover;
-
-  grid-column: span 2;
-}
-.d1 div {
-  background-color: white;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-}
-
-.d4 {
-  background-image: url(/IMAGES/cambridge.jpeg);
- background-size: cover;
- 
-  grid-column: span 2;
-}
-.d4 div {
-  background-color: white;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-}
-.d5{
-  background-image: url(/IMAGES/animation2.webp);
- background-size: cover;
- 
-grid-column: span 2;
-}
-.d5 div {
-  background-color: white;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-}
-
-
-.d8 {
-  background-image: url(/IMAGES/crafts.gif);
-  grid-column: span 2;
-  background-size: cover;
-}
-.d8 div {
-  background-color: white;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-}
 
 
 
-button {
-  height: 40px;
-  width: 70px;
 
-}
+
+
 @media screen and (max-width: 800px){
-  .body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
-  }
   
-  .d2 div {
-    background-image: url(/IMAGES/logo.png);
-  }
   
 }
   </style>
@@ -462,9 +210,22 @@ button {
     <ul>
       <li><a class="active" href="/html/index.html">Home</a></li>
       <li><a class="grammar" href="/html/grammar-home.html">Grammar</a></li>
-      <li><a class="vocab" href="/html/cambridge-tests.html">Cambridge Tests</a></li>
       <li><a class="for-kids" href="/html/for-kids.html">For Kids</a></li>
-      <li><a class="lessons" href="">Lessons</a></li>
+      <li><a class="lessons" href="/html/lessons.html">Lessons ▾</a>
+        <ul class="dropdown">
+          <li><a href="/html/lesson-primary.html">Primary</a></li>
+          <li><a href="/html/lessons-secondary.html">Secondary</a></li>
+          <li><a href="/html/lessons-advanced.html">Advanced</a></li>
+        </ul></li>
+      <li><a class="vocab" href="/html/cambridge-tests.html">Cambridge Tests ▾</a>
+        <ul class="dropdown">
+          <li><a href="/html/cambridge-pet.html">Preliminary</a></li>
+          <li><a href="/html/cambridge-first.html">First Certificate</a></li>
+          <li><a href="/html/cambridge-advanced.html">Advanced</a></li>
+       </ul>
+      </li>
+      
+      
    </ul>
  </nav>
  <div class="header3">
@@ -472,21 +233,21 @@ button {
   <a href="/html/Powerpoint.html">Powerpoints</a>
     <a href="/html/blog-home.html">Blog</a>
     <a href="/html/reading-home.html">Reading</a>
-    <a href="">Crafts</a>
+    <a href="/html/crafts.html">Crafts</a>
  </div>
  <div class="header2">
   <a href="https://www.paypal.com/donate/?business=DWYTJRPSUTDTU&no_recurring=0&currency_code=GBP">Make a Donation</a>
 
  </div>
  <div class="top">
-  <div class="top-div">
+   <div class="top-div">
     <h1 class="h1">Free English Worksheets</h1>
     <div class="p-top">
       <p >Free downloads on 100s of English 
         PDFs and Powerpoints for all levels 
   
       </p>
-  </div>
+   </div>
   
   </div>
 </div>
@@ -506,56 +267,19 @@ button {
     </div>
     </a>
     
-      <a href=""><div class="grid3">
-        <h1>Vocabulary</h1>
-        <p>Download free worksheets for all levels</p>
+      <a href="/html/cambridge-tests.html"><div class="grid3">
+        <h1>Practice Exams</h1>
+        <p>Download free Cambridge tests for all levels</p>
   
       </div></a>
     
-    <a href=""><div class="grid4">
+    <a href="/html/lessons.html"><div class="grid4">
       <h1>Lesson Plans</h1>
       <p>Download free lessons plans for all levels</p>
     </div></a>
     
   </div>
-  <div class="body">
-    
-    <div class="d1">
-      <div>
-        <a href="/html/Powerpoint.html"><button>Powerpoints</button></a>
-
-        
-      </div>
-    </div>
-    
-    <div class="d4">
-      <div>
-        <a href=""><button>Cambridge</button></a>
-
-      </div>
-      
-    </div>
-    
-    <div class="d5">
-      <div>
-        <a href=""> <button>Games</button></a>
-      </div>
-    </div>
-
-    
-
-    
-   
-    
-    
-    <div class="d8">
-      <div>
-        <a href=""><button>Crafts</button></a>
-      </div>
-    </div>
-   
   
-  </div>
 
  </div>
   
