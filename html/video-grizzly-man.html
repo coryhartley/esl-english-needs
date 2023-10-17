@@ -7,7 +7,6 @@
   <title>eslenglishneeds</title>
   <link rel="icon" href="/IMAGES/logo.png">
   <link rel="stylesheet" href="/CSS/nav.css">
-  <link rel="stylesheet" href="/html/html.html">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <script>
         function reveal() {
@@ -28,33 +27,37 @@
       
       window.addEventListener("scroll", reveal);
       </script>
+  <style>
  
-<style>
-
-nav ul li a.lessons,
+ nav ul li a.lessons,
 nav ul li a:hover{
   color: #111;
   background: #fff;
 }
+
 .outerwrap {
 
   background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
- height: 2700px;
+ height: 1600px;
 }
-.divs {
-  padding: 0 0 0 1.5%;
-  width: min(98.45%, 98.45rem);
+.title {
+  height: 110px;
+  padding: 20px;
+
+}
+.title p {
+  margin-top: 10px;
 }
 .div1 {
   height:400px;
-  background-image: url(/IMAGES/university-2104580_1280.jpg);
+  background-image: url(/IMAGES/grizzly2.jpeg);
   background-size: cover;
   background-position: -10%;
   border-radius: 80px 0 0 0;
   
 }
 .div2 {
-  height:350px;
+  height:570px;
   background-color: #fff;
   
   display: flex;
@@ -83,13 +86,13 @@ nav ul li a:hover{
       margin-inline: auto;
       display: flex;
       padding: 0 2% 0 3%;
-      border-radius: 0px 0 80px 0;
+      border-radius: 0 0 80px 0;
 
       gap: 1.5rem;
       
       
      
-      height: 1750px;
+      height: 1550px;
       }
     .wrapper1 {
       padding-block: 2rem;
@@ -99,7 +102,7 @@ nav ul li a:hover{
       display: grid;
       border-radius: 50px;
       gap: 1.5rem;
-      height: 1000px;
+      height: 1300px;
      
      
     }
@@ -111,7 +114,7 @@ nav ul li a:hover{
       display: grid;
       gap: 1.5rem;
       border-radius: 50px;
-      
+      border-left: solid rgb(211, 211, 211);
      
       height: 1000px;
      
@@ -119,20 +122,15 @@ nav ul li a:hover{
     
   
     .grid {
+      background-color: aquamarine;
      
-      height: 300px;
+      height: 400px;
       width: 100%;
       
-     
-      padding: 20px;
       
-    color: black;
-      padding-top: 10px;
+     color: black;
+      padding: 25px;
       border-radius: 40px 0 40px 0;
-      display: grid;
-      grid-template-columns: 50% 50%;
-      
-      
 
     }
 
@@ -160,40 +158,42 @@ margin: 33px;
   color: #111;
   
 }
-.div11 img {
-  height: 280px;
-  border-radius: 40px 0 40px 0;
-}
+
 .div22 {
   border-radius: 25px;
   background-color: #fff;
-  padding: 30px;
-  height: 130px;
+  padding: 30px 60px;
+  height: 170px;
+  color: #111;
+}
+.div22 h2{
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 61em) {
   .outerwrap{
     display: flex;
     flex-direction: column;
-    height: 2900px;
+    height: 2300px;
   
     
   }
   .wrapper {
     display: flex;
     flex-direction: column;
-    height: 2100px;
+    height: 2200px;
     
    
-  }
-  .wrapper1 {
-    height: 1600px;
   }
   .wrapper> div {
     width: 90%;
   }
+  .div2 {
+    height: 650px;
+  
+  }
  .wrapper2 {
-  height: 400px;
+  height: 500px;
   
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -209,21 +209,27 @@ margin: 33px;
   .wrapper2 div {
     width:80%;
     height: 270px;
-  }
-  .outerwrap {
-    height:3900px;
-  }
- 
-  .wrapper {
-    height: 3000px;
     
   }
+  .outerwrap {
+    height:2700px;
+  }
+  .title {
+    height: 120px;
+  }
   .wrapper1 {
-    height: 2100px;
+    height: 1800px;
   
   }
+  .div2 {
+    height: 700px;
+  }
+  .wrapper {
+    height: 2650px;
+    
+  }
   .grid {
-    width: 70%;
+    width: 90%;
     height: 370px ;
     grid-template-columns: 1fr;
     
@@ -259,9 +265,9 @@ margin: 33px;
         </ul></li>
       <li><a class="vocab" href="/html/cambridge-tests.html">Cambridge Tests ▾</a>
         <ul class="dropdown">
-        <li><a href="/html/cambridge-pet.html">Preliminary</a></li>
-        <li><a href="/html/cambridge-first.html">First Certificate</a></li>
-        <li><a href="/html/cambridge-advanced.html">Advanced</a></li>
+          <li><a href="/html/cambridge-pet.html">Preliminary</a></li>
+          <li><a href="/html/cambridge-first.html">First Certificate</a></li>
+          <li><a href="/html/cambridge-advanced.html">Advanced</a></li>
        </ul>
       </li>
       
@@ -278,36 +284,39 @@ margin: 33px;
    
  
   <div class="outerwrap">
-    <div class="divs">
-      <div class="div1"></div>
-    <div class="div2">
-      <div>
-        <h1>Teaching Advanced</h1>
-      <h2>Free class activities and resources</h2>
-      <h3>Everything you need to make sure you make or choose the right lesson plan. Here you
-         can find a wide range of practical resources to use in your classroom, whether you are 
-        teaching primary students, secondary students, or adults and business students. </h3>
-
-      </div>
-
-    </div>
-   
     
-      
-    </div>
     <div id="wrapper" class="wrapper">
       <div class="wrapper1">
-        <a href="/html/video-grizzly-man.html"><div class="grid">
-          <div class="div11">
-            <img src="/IMAGES/grizzly.jpeg" alt="">
-          </div>
-          <div class="div22">
-            <h2>Grizzly man</h2>
+        <div class="title"><h1>Grizzly man - The nature of nature</h1>
           <p>Watch a clip from this fascinating documentary that your students are sure to love.
             Activity includes reading, video and discussion tasks. Activity duration: 30 minutes
           </p></div>
+        <div class="div1">
           
-        </div></a>
+        </div>
+       <div class="video">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/iWYaC5YBaJk" frameborder="0" allowfullscreen></iframe>
+       </div>
+        <div class="grid"> 
+          <div class="div11">
+            
+          </div>
+          <div class="div22">
+            <h2>Downloads</h2>
+            <ul>
+              <li><a href="/IMAGES/Grizzly Man - Teacher's notes.pdf"target="_blank">Teacher notes pdf</a></li>
+              <li><a href="/IMAGES/Grizzly Man - student handout.pdf"target="_blank">Student handout pdf</a></li>
+
+              <li><a href="https://www.youtube.com/watch?v=iWYaC5YBaJk"target="_blank">Video - Youtube</a></li>
+            </ul>
+          </div>   
+          
+          
+        </div>
+  
+        
+  
+         
        
       </div>
       <div class="wrapper2">
