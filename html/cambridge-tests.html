@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eslenglishneeds</title>
+  <link rel="icon" href="/IMAGES/logo.png">
+  <link rel="stylesheet" href="/CSS/nav.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      </script>
+  <style>
+ 
+ nav ul li a.cambridge,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+
+.outerwrap {
+
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+ height: 2500px;
+}
+.divs {
+  padding: 0 0 0 1.5%;
+  width: min(98.45%, 98.45rem);
+}
+.div1 {
+  height:400px;
+  background-image: url(/IMAGES/cambridge.jpeg);
+  background-size: cover;
+  background-position: -10%;
+  border-radius: 80px 0 0 0;
+  
+}
+.div2 {
+  height:350px;
+  background-color: #fff;
+  
+  display: flex;
+  justify-content: center;
+  
+}
+.div2 div {
+  width: 80%;
+  
+}
+
+.div2 h1 {
+  margin-top: 1.5em;
+}
+.div2 h2 {
+  margin-top: 1.5em;
+}
+.div2 h3 {
+  margin-top: 1em;
+  color: rgb(98, 96, 96);
+}
+.wrapper {
+      padding-block: 2rem;
+      background-color: #fff;
+      width: min(97%, 97rem);
+      margin-inline: auto;
+      display: flex;
+      padding: 0 2% 0 3%;
+      border-radius: 0 0 80px 0;
+
+      gap: 1.5rem;
+      
+      
+     
+      height: 1100px;
+      }
+    .wrapper1 {
+      padding-block: 2rem;
+      
+      width:70%;
+      margin-inline: auto;
+      display: grid;
+      border-radius: 50px;
+      gap: 1.5rem;
+      height: 1000px;
+     
+     
+    }
+    .wrapper2 {
+      padding-block: 2rem;
+      
+      width:30%;
+      margin-inline: auto;
+      display: grid;
+      gap: 1.5rem;
+      border-radius: 50px;
+      
+     
+      height: 1000px;
+     
+    }
+    
+  
+    .grid {
+     
+      height: 300px;
+      width: 100%;
+      
+     
+      padding: 20px;
+      
+    color: black;
+      padding-top: 10px;
+      border-radius: 40px 0 40px 0;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      
+      
+
+    }
+
+ 
+
+
+.wrap3 {
+  height: 300px;
+  width: 200px;
+  right: 0;
+  border-style: solid ;
+  text-decoration: none;
+  list-style-type: none;
+  border-radius: 40px 0 40px 0;
+margin: 33px;
+  padding: 30px;
+  
+
+}
+.wrap3 > ul {
+  list-style-type: none;
+  
+}
+.wrap3  a {
+  color: #111;
+  
+}
+.div11 img {
+  height: 280px;
+  border-radius: 40px 0 40px 0;
+}
+.div22 {
+  border-radius: 25px;
+  background-color: #fff;
+  padding: 30px;
+  height: 130px;
+}
+
+@media screen and (max-width: 55em) {
+  .outerwrap{
+    display: flex;
+    flex-direction: column;
+    height: 2400px;
+  
+    
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 1500px;
+    
+   
+  }
+  .wrapper> div {
+    width: 90%;
+  }
+ .wrapper2 {
+  height: 400px;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+
+}
+@media screen and (max-width: 44em) {
+  .wrapper2 {
+    grid-template-columns: 1fr;
+    
+    
+  }
+  .wrapper2 div {
+    width:80%;
+    height: 270px;
+  }
+  .outerwrap {
+    height:2900px;
+  }
+  .wrapper1 {
+    height: 1200px;
+  
+  }
+  .wrapper {
+    height: 2100px;
+    
+  }
+  .grid {
+    width: 70%;
+    height: 370px ;
+    grid-template-columns: 1fr;
+    
+    
+    
+  }
+  
+}
+
+@media screen and (max-width: 61em) {
+  .outerwrap{
+    display: flex;
+    flex-direction: column;
+    height: 2400px;
+  
+    
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 1500px;
+    
+   
+  }
+  .wrapper> div {
+    width: 90%;
+  }
+ .wrapper2 {
+  height: 400px;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+
+}
+@media screen and (max-width: 44em) {
+  .wrapper2 {
+    grid-template-columns: 1fr;
+    border: none;
+    
+  }
+  .wrapper2 div {
+    width:80%;
+    height: 270px;
+  }
+  .outerwrap {
+    height:2900px;
+  }
+  .wrapper1 {
+    height: 1200px;
+  
+  }
+  .wrapper {
+    height: 2100px;
+    
+  }
+  .grid {
+    width: 70%;
+    height: 370px ;
+    grid-template-columns: 1fr;
+    
+    
+    
+  }
+  
+}
+@media screen and (max-width:530px) {
+ 
+  
+  .grid {
+    height: 370px;
+    width: 70%;
+  }
+  
+  .grid img{
+    
+    height: 220px;
+    
+  }
+
+
+}
+@media screen and (max-width:400px) {
+  .div1 {
+    display: none;
+  }
+  .div2 {
+    height: 390px;
+    margin-top: 30px;
+  }
+  
+  .grid {
+    height: 280px;
+    width: 280px;
+    padding: 1%;
+  }
+  .grid img {
+    height: 185px;
+  }
+
+  .div22 {
+    width: 90%;
+    
+  }
+ 
+ 
+  
+
+}
+
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+       <img class="header-logo" src="/IMAGES/logo.png" alt="">
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active" href="/html/index.html">Home</a></li>
+      <li><a class="grammar" href="/html/grammar-home.html">Grammar</a></li>
+      <li><a class="for-kids" href="/html/for-kids.html">For Kids</a></li>
+      <li><a class="lessons" href="/html/lessons.html">Lessons ▾</a>
+        <ul class="dropdown">
+          <li><a href="/html/lesson-primary.html">Primary</a></li>
+          <li><a href="/html/lessons-secondary.html">Secondary</a></li>
+          <li><a href="/html/lessons-advanced.html">Advanced</a></li>
+        </ul></li>
+      <li><a class="cambridge" href="/html/cambridge-tests.html">Cambridge Tests ▾</a>
+        <ul class="dropdown">
+          <li><a href="/html/cambridge-pet.html">Preliminary</a></li>
+          <li><a href="/html/cambridge-first.html">First Certificate</a></li>
+          <li><a href="/html/cambridge-advanced.html">Advanced</a></li>
+       </ul>
+      </li>
+      
+      
+   </ul>
+ </nav>
+ <div class="header3">
+  
+  <a href="/html/Powerpoint.html">Powerpoints</a>
+    <a href="/html/blog-home.html">Blog</a>
+    <a href="/html/reading-home.html">Reading</a>
+    <a href="/html/crafts.html">Crafts</a>
+</div>
+   
+ 
+  <div class="outerwrap">
+    <div class="divs">
+      <div class="div1"></div>
+    <div class="div2">
+      <div>
+        <h1>Cambridge Exams</h1>
+      <h2>Free practice tests for levels from Preliminary to Advanced</h2>
+      <h3>Here you'll find past practice papers with answers included to 
+        help you learn or teach English.  </h3>
+
+      </div>
+
+    </div>
+    
+      
+    </div>
+    <div id="wrapper" class="wrapper">
+      <div class="wrapper1">
+        <a href="/html/cambridge-pet.html"><div class="grid"> 
+          <div class="div11">
+            <img src="/IMAGES/pet.jpg" alt="">
+          </div>
+          <div class="div22">
+            <h2>Preliminary exams</h2>
+          </div>   
+          
+          
+        </div></a>
+  
+        <a href="/html/cambridge-first.html"><div class="grid">
+          <div class="div11">
+            <img src="/IMAGES/lessons-secondary.jpg" alt="">
+          </div>
+          <div class="div22"><h2>First certificate exams</h2></div>
+          
+        </div></a>
+  
+         <a href="/html/cambridge-advanced.html"> <div class="grid">
+          <div class="div11">
+            <img src="/IMAGES/university-2104580_1280.jpg" alt="">
+          </div>
+          <div class="div22"><h2>Advanced exams</h2></div>
+          </div></a>
+       
+      </div>
+      <div class="wrapper2">
+        <div class="wrap3">
+          <h3>Grammar</h3>
+          <ul>
+            <li><a href="/html/grammar-to-be.html">To be</a></li>
+            <li><a href="/html/grammar-tenses.html">Tenses</a></li>
+            <li><a href="/html/grammar-conditionals.html">Conditionals</a></li>
+            <li><a href="/html/grammar-passive-voice.html">Passive voice</a></li>
+            <li><a href="/html/grammar-adverb.html">Adverbs</a></li>
+            <li><a href="/html/grammar-adjectives.html">Comparatives</a></li>
+            <li><a href="/html/grammar-prepositions.html">In, an, at</a></li>
+            <li><a href="/html/grammar-present-perfect.html">For, since</a></li>
+            <li><a href="/html/grammar-clauses.html">Clauses</a></li>
+            <li><a href="/html/grammar-linkers.html">Connectors</a></li>
+    
+          </ul>
+          
+          
+        </div>
+        <div class="wrap3">
+          <h3>Reading</h3>
+        <ul>
+          <li><a href="/html/reading-home.html">Primary stories</a></li>
+          <li><a href="/html/reading-secondary.html">Intermediate stories</a></li>
+          <li><a href="/html/reading-advanced.html">Advanced stories
+          </a></li>
+        </ul>
+       
+          
+          
+        </div>
+        
+      </div>
+      
+        
+      
+      
+      
+       
+     
+     
+        
+    </div>
+
+  </div>
+
+</body>
+</html>

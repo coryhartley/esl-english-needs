@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eslenglishneeds</title>
+  <link rel="icon" href="/IMAGES/logo.png">
+  <link rel="stylesheet" href="/CSS/nav.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      </script>
+  <style>
+  
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+
+
+.top {
+  display: grid;
+  height: 540px;
+ background-image: url(/IMAGES/R.jpeg);
+ background-size: cover;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.h1 {
+ font-size: 45px;
+  
+  
+}
+.outerwrap {
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+opacity: 0.96;
+ height: 1600px;
+}
+    .wrapper {
+      padding-block: 7rem;
+      
+      width: min(60%, 70rem);
+      margin-inline: auto;
+      display: grid;
+      gap: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      height: 700px;
+      
+      text-align: center;
+    }
+   
+   .wrapper div {
+    text-decoration: none;
+    transition: transform ease-in-out 0.3s;
+   }
+   .wrapper a {
+    text-decoration: none;
+    color: black;
+   }
+  
+    .grid1 {
+      height: 250px;
+      padding-top: 20px;
+      background-image: url(/IMAGES/grammar.jpeg);
+      background-size: cover;
+      border-radius: 10px;
+      transition: transform ease-in-out 10.5s;
+  cursor: pointer;
+  border: solid;
+  border-color: #000000;
+  box-shadow: 0px 0px 23px #000000;
+ 
+    }
+    .grid2{
+      height: 250px;
+      padding-top: 20px;
+      border-radius: 10px;
+      background-image: url(/IMAGES/kidss.jpeg);
+      background-size: cover;
+   
+  cursor: pointer;
+  border: solid;
+  border-color: #000000;
+  box-shadow: 0px 0px 23px #000000;
+  transition: transform ease-in-out 0.5s;
+    }
+    .grid3{
+      padding-top: 20px;
+      border-radius: 10px;
+      height: 250px;
+      background-image: url(/IMAGES/cambridge.jpeg);
+      background-size: cover;
+  cursor: pointer;
+  border: solid;
+  border-color: #000000;
+  box-shadow: 0px 0px 23px #000000;
+
+
+    }
+    .grid4{
+      padding-top: 20px;
+      border-radius: 10px;
+      height: 250px;
+      background-image: url(/IMAGES/lessonplan.jpeg);
+      background-size: cover;
+  cursor: pointer;
+  border: solid;
+  border-color: #000000;
+  box-shadow: 0px 0px 23px #000000;
+    }
+
+
+.grid1:hover, .grid2:hover, .grid3:hover, .grid4:hover {
+ transform: scale(1.05);
+}
+
+
+
+
+@media screen and (max-width: 53em) {
+ 
+  .top {
+   display: none;
+
+
+  }
+  
+  
+ 
+
+}
+
+
+
+@media screen and (max-width:390px) {
+  .grid1, .grid2, .grid3, .grid4 {
+    width: 70%;
+   background-image: none;
+   background-color: #fff;
+   height: 120px;
+    
+  }
+  .outerwrap p  {
+  display: none;
+}
+.header3 a{
+    font-size: 13px;
+  }
+}
+
+
+
+.top-div {
+  background-color: white;
+  padding: 25px;
+  height: 230px;
+  width: 550px;
+ margin-top: 20%;
+ margin-right: 35%;
+  border-radius: 40px;
+  box-shadow: 0px 0px 23px #000000;
+  
+}
+
+.top-div p{
+  margin-top: 20px;
+
+}
+.outerwrap h1  {
+  background-color: white;
+}
+.outerwrap p  {
+  background-color: white;
+}
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+       <img class="header-logo" src="/IMAGES/logo.png" alt="">
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active" href="/html/index.html">Home</a></li>
+      <li><a class="grammar" href="/html/grammar-home.html">Grammar</a></li>
+      <li><a class="for-kids" href="/html/for-kids.html">For Kids</a></li>
+      <li><a class="lessons" href="/html/lessons.html">Lessons ▾</a>
+        <ul class="dropdown">
+          <li><a href="/html/lesson-primary.html">Primary</a></li>
+          <li><a href="/html/lessons-secondary.html">Secondary</a></li>
+          <li><a href="/html/lessons-advanced.html">Advanced</a></li>
+        </ul></li>
+      <li><a class="vocab" href="/html/cambridge-tests.html">Cambridge Tests ▾</a>
+        <ul class="dropdown">
+          <li><a href="/html/cambridge-pet.html">Preliminary</a></li>
+          <li><a href="/html/cambridge-first.html">First Certificate</a></li>
+          <li><a href="/html/cambridge-advanced.html">Advanced</a></li>
+       </ul>
+      </li>
+      
+      
+   </ul>
+ </nav>
+ <div class="header3">
+  
+  <a href="/html/Powerpoint.html">Powerpoints</a>
+    <a href="/html/blog-home.html">Blog</a>
+    <a href="/html/reading-home.html">Reading</a>
+    <a href="/html/crafts.html">Crafts</a>
+ </div>
+ <div class="header2">
+  <a href="https://www.paypal.com/donate/?business=DWYTJRPSUTDTU&no_recurring=0&currency_code=GBP">Make a Donation</a>
+
+ </div>
+ <div class="top">
+   <div class="top-div">
+    <h1 class="h1">Free English Worksheets</h1>
+    <div class="p-top">
+      <p >Free downloads on 100s of English 
+        PDFs and Powerpoints for all levels 
+  
+      </p>
+   </div>
+  
+  </div>
+</div>
+<div class="outerwrap">
+  <div class="wrapper">
+    <a href="/html/grammar-home.html"><div class="grid1">
+      <h1>Grammar</h1>
+        
+        <p>Download free worksheets for all levels</p>
+      
+      </div></a>
+    
+    <a href="/html/for-kids.html"><div class="grid2"> 
+      <h1>Just for Kids</h1>
+      
+      <p>Download free worksheets for all levels</p>
+    </div>
+    </a>
+    
+      <a href="/html/cambridge-tests.html"><div class="grid3">
+        <h1>Practice Exams</h1>
+        <p>Download free Cambridge tests for all levels</p>
+  
+      </div></a>
+    
+    <a href="/html/lessons.html"><div class="grid4">
+      <h1>Lesson Plans</h1>
+      <p>Download free lessons plans for all levels</p>
+    </div></a>
+    
+  </div>
+  
+
+ </div>
+  
+
+
+</body>
+</html>

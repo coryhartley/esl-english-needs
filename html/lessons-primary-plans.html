@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eslenglishneeds</title>
+  <link rel="icon" href="/IMAGES/logo.png">
+  <link rel="stylesheet" href="/CSS/nav.css">
+  <link rel="stylesheet" href="/html/html.html">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      </script>
+ 
+<style>
+
+nav ul li a.lessons,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+.outerwrap {
+
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+ height: 2700px;
+}
+.divs {
+  padding: 0 0 0 1.5%;
+  width: min(98.45%, 98.45rem);
+}
+.div1 {
+  height:400px;
+  background-image: url(/IMAGES/lessons-primary.jpg);
+  background-size: cover;
+  background-position: -10%;
+  border-radius: 80px 0 0 0;
+  
+}
+.div2 {
+  height:410px;
+  background-color: #fff;
+  
+  display: flex;
+  justify-content: center;
+  
+}
+.div2 div {
+  width: 80%;
+  
+}
+
+.div2 h1 {
+  margin-top: 1.5em;
+}
+.div2 h2 {
+  margin-top: 1.5em;
+}
+.div2 h3 {
+  margin-top: 1em;
+  color: rgb(98, 96, 96);
+}
+.wrapper {
+      padding-block: 2rem;
+      background-color: #fff;
+      width: min(97%, 97rem);
+      margin-inline: auto;
+      display: flex;
+      padding: 0 2% 0 3%;
+      border-radius: 0px 0 80px 0;
+
+      gap: 1.5rem;
+      
+      
+     
+      height: 1750px;
+      }
+    .wrapper1 {
+      padding-block: 2rem;
+      
+      width:70%;
+      margin-inline: auto;
+      display: grid;
+      border-radius: 50px;
+      gap: 1.5rem;
+      height: 1000px;
+     
+     
+    }
+    .wrapper2 {
+      padding-block: 2rem;
+      border-left: solid rgb(211, 211, 211);
+      width:30%;
+      margin-inline: auto;
+      display: grid;
+      gap: 1.5rem;
+      border-radius: 50px;
+      
+     
+      height: 1000px;
+     
+    }
+    
+  
+    .grid {
+     
+      height: 300px;
+      width: 100%;
+      
+     
+      padding: 20px;
+      
+    color: black;
+      padding-top: 10px;
+      border-radius: 40px 0 40px 0;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      
+      
+
+    }
+
+ 
+
+
+.wrap3 {
+  height: 300px;
+  width: 200px;
+  right: 0;
+  border-style: solid ;
+  text-decoration: none;
+  list-style-type: none;
+  border-radius: 40px 0 40px 0;
+margin: 33px;
+  padding: 30px;
+  
+
+}
+.wrap3 > ul {
+  list-style-type: none;
+  
+}
+.wrap3  a {
+  color: #111;
+  
+}
+.div11 img {
+  height: 280px;
+  border-radius: 40px 0 40px 0;
+}
+.div22 {
+  border-radius: 25px;
+  background-color: #fff;
+  padding: 20px;
+  height: 150px;
+}
+
+@media screen and (max-width: 55em) {
+  .outerwrap{
+    display: flex;
+    flex-direction: column;
+    height: 2700px;
+  
+    
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 1400px;
+    
+   
+  }
+  .wrapper1 {
+    height: 1600px;
+  }
+  .wrapper> div {
+    width: 90%;
+  }
+ .wrapper2 {
+  height: 400px;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+
+}
+@media screen and (max-width: 44em) {
+  .wrapper2 {
+    grid-template-columns: 1fr;
+    border: none;
+    
+  }
+  .wrapper2 div {
+    width:80%;
+    height: 270px;
+  }
+  .outerwrap {
+    height:3200px;
+  }
+ 
+  .wrapper {
+    height: 2300px;
+    
+  }
+  .wrapper1 {
+    height: 1000px;
+  
+  }
+  .grid {
+    width: 70%;
+    height: 370px ;
+    grid-template-columns: 1fr;
+    
+    
+    
+  }
+  
+}
+
+@media screen and (max-width:534px) {
+  
+  .grid {
+    height: 370px;
+    width: 110%;
+  }
+  
+  .grid img{
+    width: 90%;
+    height: 90%;
+    
+  }
+  .wrapper1 {
+    height: 750px;
+  }
+  
+
+
+}
+@media screen and (max-width:391px) {
+  .grid {
+    height: 300px;
+    width: 110%;
+  }
+  .div2 {
+    height: 500px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+       <img class="header-logo" src="/IMAGES/logo.png" alt="">
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active" href="/html/index.html">Home</a></li>
+      <li><a class="grammar" href="/html/grammar-home.html">Grammar</a></li>
+      <li><a class="for-kids" href="/html/for-kids.html">For Kids</a></li>
+      <li><a class="lessons" href="/html/lessons.html">Lessons ▾</a>
+        <ul class="dropdown">
+          <li><a href="/html/lesson-primary.html">Primary</a></li>
+          <li><a href="/html/lessons-secondary.html">Secondary</a></li>
+          <li><a href="/html/lessons-advanced.html">Advanced</a></li>
+        </ul></li>
+      <li><a class="vocab" href="/html/cambridge-tests.html">Cambridge Tests ▾</a>
+        <ul class="dropdown">
+        <li><a href="/html/cambridge-pet.html">Preliminary</a></li>
+        <li><a href="/html/cambridge-first.html">First Certificate</a></li>
+        <li><a href="/html/cambridge-advanced.html">Advanced</a></li>
+       </ul>
+      </li>
+      
+      
+   </ul>
+ </nav>
+ <div class="header3">
+  
+  <a href="/html/Powerpoint.html">Powerpoints</a>
+    <a href="/html/blog-home.html">Blog</a>
+    <a href="/html/reading-home.html">Reading</a>
+    <a href="/html/crafts.html">Crafts</a>
+</div>
+   
+ 
+  <div class="outerwrap">
+    <div class="divs">
+      <div class="div1"></div>
+    <div class="div2">
+      <div>
+        <h1>Teaching Primary</h1>
+      <h2>Free class activities and resources</h2>
+      <h3>Everything you need to make sure you make or choose the right lesson plan. Here you
+         can find a wide range of practical resources to use in your classroom, whether you are 
+        teaching primary students, secondary students, or adults and business students. </h3>
+
+      </div>
+
+    </div>
+    
+      
+    </div>
+    <div id="wrapper" class="wrapper">
+      <div class="wrapper1">
+
+        <a href="/html/lessons-primary-routines.html"><div class="grid">
+          <div class="div11">
+            <img src="/IMAGES/routine.jpg" alt="">
+          </div>
+          <div class="div22">
+            <h2>Routines and frequency</h2>
+          <p>Make sure your students have no problems speaking about their routines and habits</p></div>
+          
+        </div></a>
+        
+  
+        <a href="/html/lessons-primary-3rd-person-singular.html"><div class="grid">
+          <div class="div11">
+            <img src="/IMAGES/destiny.jpeg" alt="">
+          </div>
+          <div class="div22">
+            <h2>3rd person singluar - Present tense</h2>
+          <p>Learn these tricky verb forms with a fun, video centred lesson</p></div>
+          
+        </div></a>
+  
+          
+       
+      </div>
+      <div class="wrapper2">
+        <div class="wrap3">
+          <h3>Grammar</h3>
+          <ul>
+            <li><a href="/html/grammar-to-be.html">To be</a></li>
+            <li><a href="/html/grammar-tenses.html">Tenses</a></li>
+            <li><a href="/html/grammar-conditionals.html">Conditionals</a></li>
+            <li><a href="/html/grammar-passive-voice.html">Passive voice</a></li>
+            <li><a href="/html/grammar-adverb.html">Adverbs</a></li>
+            <li><a href="/html/grammar-adjectives.html">Comparatives</a></li>
+            <li><a href="/html/grammar-prepositions.html">In, on, at</a></li>
+            <li><a href="/html/grammar-present-perfect.html">For, since</a></li>
+            <li><a href="/html/grammar-clauses.html">Clauses</a></li>
+            <li><a href="/html/grammar-linkers.html">Connectors</a></li>
+    
+          </ul>
+          
+          
+        </div>
+        <div class="wrap3">
+          <h3>Reading</h3>
+        <ul>
+          <li><a href="/html/reading-home.html">Primary stories</a></li>
+          <li><a href="#">Intermediate stories</a></li>
+          <li><a href="#">Advanced stories
+          </a></li>
+        </ul>
+       
+          
+          
+        </div>
+        
+      </div>
+      
+        
+      
+      
+      
+       
+     
+     
+        
+    </div>
+
+  </div>
+
+</body>
+</html>
