@@ -41,7 +41,7 @@ nav ul li a:hover{
  height: 2500px;
 }
 .title {
-  height: 110px;
+  height: 130px;
   padding: 20px;
 
 }
@@ -125,7 +125,7 @@ nav ul li a:hover{
     .grid {
       background-color: aquamarine;
      
-      height: 400px;
+      height: 320px;
       width: 100%;
       
       
@@ -186,6 +186,9 @@ margin: 33px;
     
    
   }
+  .title {
+    height: 180px;
+  }
   .wrapper> div {
     width: 90%;
   }
@@ -205,7 +208,7 @@ margin: 33px;
   .wrapper2 {
     grid-template-columns: 1fr;
     border: none;
-    
+    height: fit-content;
   }
   .wrapper2 div {
     width:80%;
@@ -213,11 +216,9 @@ margin: 33px;
     
   }
   .outerwrap {
-    height:2700px;
+    height:3100px;
   }
-  .title {
-    height: 120px;
-  }
+  
   .wrapper1 {
     height: 1800px;
   
@@ -226,7 +227,7 @@ margin: 33px;
     height: 700px;
   }
   .wrapper {
-    height: 2650px;
+    height: 3000px;
     
   }
   .grid {
@@ -240,37 +241,55 @@ margin: 33px;
   
 }
 
-@media screen and (max-width:548px) {
-  .div2 {
-
-  }
-  .grid {
+@media screen and (max-width:450px) {
+  
+  .div1{
+    background-size: 150%;
     height: 350px;
-    width: 110%;
   }
   
-  .grid img{
-    width: 90%;
-    height: 90%;
-    
+  .title {
+    height: 210px;
   }
-  .wrapper1 {
-    height: 750px;
-  }
-  
-
 
 }
-@media screen and (max-width:391px) {
+
+@media screen and (max-width:400px) {
   .grid {
     height: 300px;
-    width: 110%;
+    width: 90%;
+    margin-top: 240px;
   }
   .div2 {
     height: 500px;
   }
+  .wrapper1 {
+    height: 1900px;
+    
+  
+  }
 }
-
+@media screen and (max-width:350px) {
+  .grid {
+  
+    margin-top: 290px;
+  }
+  .title {
+    padding: 0 35px 0 0;
+  }
+  .div22 {
+    height: 260px;
+  }
+  .div1{
+    background-size: 140%;
+    width: 90%;
+    height: 300px;
+  }
+  .div2 {
+    width: 90%;
+  }
+ 
+}
 
   </style>
 </head>
@@ -317,10 +336,11 @@ margin: 33px;
     
     <div id="wrapper" class="wrapper">
       <div class="wrapper1">
+        <div class="div1"></div>
         <div class="title"><h1>Routines and Frequency- Present Simple</h1>
           <p>Every student must master the Present Simple. After this lesson, they will have no problems speaking and writing about the present.
           </p></div>
-        <div class="div1"></div>
+        
         <div class="div2">
           <div>
             
