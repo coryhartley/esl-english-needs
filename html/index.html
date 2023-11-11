@@ -1,0 +1,622 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eslenglishneeds</title>
+  <link rel="icon" href="/IMAGES/logo.png">
+  <link rel="stylesheet" href="/CSS/nav.css">
+  <link rel="stylesheet" href="/html/html.html">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      </script>
+ 
+<style>
+
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+.outerwrap {
+
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+ height: 3200px;
+}
+.divs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  height: 329px;
+  
+}
+.div1 video {
+   
+  width: 100%;
+}
+.div2 {
+  padding: 28px 40px 0 80px;
+ 
+  
+  
+}
+
+
+.div2 h1 {
+  
+  color: #fff;
+}
+.div2 h2 {
+  margin-top: 1.5em;
+}
+.div2 h3 {
+
+  margin-top: 1em;
+  color: rgb(98, 96, 96);
+}
+.buttons {
+  margin-top: 30px;
+  height: 80px;
+  
+  display: flex;
+  justify-content: space-around;
+}
+.buttons button {
+  height: 60px;
+  width: 150px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgb(3, 119, 142) 100%);
+  border: solid black 4px;
+}
+.buttons a {
+  color: white;
+ font-weight: 600;
+  text-decoration: none;
+  font-size: 21px;
+}
+.wrapper {
+      padding-block: 2rem;
+      
+      
+      margin-inline: auto;
+
+      height: 2250px;
+      }
+
+    .wrapper1 {
+      padding-block: 2rem;
+      background-color: #fff;
+      padding: 50px;
+      margin-inline: auto;
+      display: grid;
+     
+      
+      height: 400px;
+     
+     
+     
+    }
+    .wrapper1 h1 {
+      font-size: 60px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .wrapper1 h3 {
+      text-align: center;
+      line-height: 30px;
+      margin-top: 1.5em;
+    }
+    .wrapper2 {
+      
+      background-color: #fff;
+      width: 100%;;
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns:1.8fr 1.2fr ;
+      
+      
+      
+     
+      height: 500px;
+     
+    }
+    .right {
+      background-color: rgb(140, 177, 222);
+      height: 500px;
+      padding: 30px;
+      
+      
+    }
+    .right div {
+      color: #fff;
+      font-size: 50px;
+      font-weight: 700;
+      
+    }
+  .left {
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #111;
+  
+  }
+    .grid {
+     width: 90%;
+      height: 100px;
+      background-color: #fff;
+      
+      
+     
+      padding: 20px;
+      
+    color: black;
+      padding-top: 10px;
+      border: solid;
+      border-radius: 40px 0 40px 0;
+      display: grid;
+      grid-template-rows: 50% 50%;
+      
+      
+
+    }
+
+ 
+
+    .wrapper3 {
+      
+      background-color: rgb(140, 177, 222);
+      width: 100%;
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns:31% 31% 31%;
+      gap: 2rem;
+      padding: 2rem;
+      color: white;
+      
+     
+      height: 680px;
+     
+    }
+    .two, .three, .four {
+      height: 300px;
+      
+      border: solid white 12px;
+      border-radius: 60px;
+      padding: 30px 100px;
+      font-size: 32px;
+      text-decoration: overline;
+      
+
+    }
+    .two, .three, .four h3{
+      color: #fff;
+      
+      
+      
+    }
+    
+   
+    .four {
+      color: white;
+    }
+    .one { 
+      
+     
+      grid-column: span 3;
+      
+     
+    }
+    .one h1 {
+      font-size: 60px;
+      
+    }
+
+    .wrapper4 {
+      
+      
+      width: 100%;
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 460px;
+     
+    }
+    .five {
+      height: 368px;
+  
+      padding: 45px 25px 0 45px;
+    }
+    .five h1 {
+      color: #fff;
+    }
+    .five h3 {
+      margin-top: 1.5em;
+      color: #fff;
+    }
+    .six video {
+      width: 100%;
+
+    }
+    .wrapper5 {
+      padding-block: 2rem;
+      background-color: #fff;
+      padding: 50px;
+      margin-inline: auto;
+      display: grid;
+     
+      
+      height: 460px;
+     
+     
+     
+    }
+    .wrapper5 h1 {
+      font-size: 60px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .wrapper5 h3 {
+      text-align: center;
+      line-height: 30px;
+      margin-top: 1.5em;
+    }
+
+@media screen and (max-width: 1100px) {
+  .wrapper3 {
+    height: 700px;
+    grid-template-columns: 1fr;
+    
+  }
+  .one {
+    grid-column: span 1;
+  }
+
+  .two, .three, .four {
+    height: 160px;
+  }
+
+  .six {
+    display:none;
+  }
+  .wrapper4 {
+    grid-template-columns: 1fr;
+  }
+  .five div {
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+  }
+ 
+}
+@media screen and (max-width: 920px) {
+  .divs{
+    display: flex;
+    flex-direction: column;
+    height: 640px;
+    
+    align-items: center;
+  
+    
+  }
+  
+  .div2 {
+    display: grid;
+    grid-template-columns: 1fr ;
+    height: 200px;
+  
+  }
+.div2 h1{
+  width: 100%;
+  font-size: 50px;
+  
+}
+.div2 li {
+  display: none;
+}
+
+}
+
+
+@media screen and (max-width: 680px) {
+  .outerwrap {
+    height: 3600px;
+  }
+  
+  .wrapper2 {
+    grid-template-columns: 1fr;
+    height: 600px;
+
+  }
+  .right {
+    height: 300px;
+   
+    
+  }
+  .left {
+    row-gap: 10px;
+  }
+  
+  .left div {
+    height: 60px;
+  }
+  .wrapper5 {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 562px)
+{
+  .wrapper1 {
+    height: 510px;
+  }
+  .wrapper5 { 
+    display: none;
+  }
+  .wrapper3 {
+    height: 570px;
+   
+   
+  }
+  .div2 {
+    padding: 28px 40px 0 60px;
+  }
+  .one h1 {
+    margin-top: 15px;
+  }
+  .two, .three, .four {
+    font-size: 24px;
+    height: 90px;
+    border: solid white 7px;
+    padding: 20px 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .two, .three, .four {
+    font-size: 21px;
+    padding: 20px 30px;
+    
+    
+  }
+  .div2 {
+    padding: 28px 30px 0 60px;
+  }
+  .div2 h1 {
+    font-size: 40px;
+  }
+  
+  .buttons {
+    display: grid;
+    row-gap: 13px;
+    
+  }
+  
+}
+@media screen and (max-width: 409px) {
+  .right h1 {
+    font-size: 69px;
+  }
+  .two, .three, .four {
+    
+    
+    border: solid white 4px;
+   
+  }
+ 
+.wrapper1 {
+    height: 590px;
+  }
+}
+@media screen and (max-width: 330px){
+  .two, .three, .four {
+    font-size: 19px;
+    padding: 15px 25px;
+    
+  }
+  .wrapper1 h1 {
+    font-size: 35px;
+  }
+  .right h1 {
+    font-size: 59px;
+  }
+
+  .one h1 {
+    font-size: 59px;
+    margin-top: 10px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+       <img class="header-logo" src="/IMAGES/logo.png" alt="">
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active" href="/html/index.html">Home</a></li>
+      <li><a class="grammar" href="/html/grammar-home.html">Grammar</a></li>
+      <li><a class="for-kids" href="/html/for-kids.html">For Kids</a></li>
+      <li><a class="lessons" href="/html/lessons.html">Lessons ▾</a>
+        <ul class="dropdown">
+          <li><a href="/html/lesson-primary.html">Primary</a></li>
+          <li><a href="/html/lessons-secondary.html">Secondary</a></li>
+          <li><a href="/html/lessons-advanced.html">Advanced</a></li>
+        </ul></li>
+      <li><a class="vocab" href="/html/cambridge-tests.html">Cambridge Tests ▾</a>
+        <ul class="dropdown">
+        <li><a href="/html/cambridge-pet.html">Preliminary</a></li>
+        <li><a href="/html/cambridge-first.html">First Certificate</a></li>
+        <li><a href="/html/cambridge-advanced.html">Advanced</a></li>
+       </ul>
+      </li>
+      
+      
+   </ul>
+ </nav>
+ <div class="header3">
+  
+  <a href="/html/Powerpoint.html">Powerpoints</a>
+    <a href="/html/blog-home.html">Blog</a>
+    <a href="/html/reading-home.html">Reading</a>
+    <a href="/html/crafts.html">Crafts</a>
+</div>
+   
+ 
+  <div class="outerwrap">
+    <div class="divs">
+      <div class="div1">
+        <video  autoplay loop src="/IMAGES/classroom-vid.mp4"></video>
+      </div>
+     <div class="div2">
+      <div>
+        <h1>Get your students talking!</h1>
+        <ul>
+          <li><h3>Step-by-step lesson plans</h3></li>
+          <li><h3>Video activities</h3></li>
+          <li><h3>Fun group projects</h3></li>
+          <li><h3>All downloadable as PDFs</h3></li>
+         
+        </ul>
+       
+
+      </div>
+      <div class="buttons">
+        <button> <a href="/html/lessons.html">Free lessons</a> </button>
+      <button> <a href="/html/grammar-home.html">Worksheets</a> </button>
+      </div>
+
+    </div>
+    
+      
+    </div>
+    <div id="wrapper" class="wrapper">
+      <div class="wrapper1">
+        <div>
+          <h1>Welcome</h1>
+          <h3>... to our vibrant world of English grammar! We've created a space where the intricacies of grammar come alive with energy and expertise. Our team of dedicated experts, who are passionate about language
+             learning, has crafted a treasure trove of free materials that are not only informative but also fun and
+              dynamic.
+          </h3>
+          
+        </div>
+       
+        
+        
+
+
+           
+       
+      </div>
+      
+      <div class="wrapper2">
+        <div class="right">
+          <div>
+            <h1>Recent posts...</h1>
+          </div>
+        </div>
+        <div class="left">
+         <a href="/html/videos/lion-king.html"><div class="grid"><h3>Video Lesson: Lion King</h3></div></a>
+         <a href="/html/lessons-primary-routines.html"><div class="grid"><h3>Lesson Plan: Routines</h3></div></a>
+         <a href="/html/grammar-conditionals.html"><div class="grid"><h3>Worksheets: Conditionals</h3></div></a>
+         <a href="/html/videos/grizzly-man.html"><div class="grid"><h3>Video Lesson: Grizzly Man</h3></div></a>
+        </div>
+        
+        
+        
+      </div>
+      <div class="wrapper5">
+        <div>
+          
+          <h3>Learning English grammar doesn't have to be a dull and daunting task. We believe that a 
+              lively approach can make all the difference, and our resources reflect just that. Whether you're 
+              a student, a teacher, or a lifelong learner, you'll find a wide array of engaging materials here to 
+             ignite your enthusiasm for grammar.
+            </h3>
+            <h3> Join us on this grammatical journey, where you'll discover a world of knowledge, creativity, and 
+                 interactivity. Explore our free resources and let the joy of learning English grammar inspire you 
+                on your path to language mastery. Welcome to an English grammar experience that's both educational and 
+                exciting.
+              </h3>
+        </div>
+       
+        
+        
+
+
+           
+       
+      </div>  
+      <div class="wrapper3">
+        <div class="one">
+          <h1>Discover more...</h1>
+        </div>
+        <a href="/html/cambridge-tests.html"> <div class="two">
+          <h3>Practice Exams</h3>
+          
+        </div></a>
+        <a href="/html/reading-home.html"><div class="three"><h3>Reading and Stories</h3></div></a>
+        <a href="/html/for-kids.html"><div class="four"><h3>For Kids</h3></div></a>
+       
+        
+        
+        
+      </div>
+      <div class="wrapper4">
+        <div class="five">
+          <div>
+            <h1>Make the classroom your own</h1>
+            <h3>With all these free resources, it's never been easier
+              to completely customise your classes and teach the way that
+              suits you.
+            </h3>
+           
+    
+          </div>
+          <div class="buttons">
+            <button> <a href="/html/index.html">Back to top</a> </button>
+         
+          </div>
+        </div>
+        <div class="six"><video src="/IMAGES/animate_-_22182 (540p).mp4"></video>
+        </div>
+        
+        
+      </div>
+      
+      
+       
+     
+     
+        
+    </div>
+
+  </div>
+
+</body>
+</html>
