@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eslenglishneeds</title>
+  <link rel="icon" href="/IMAGES/logo.png">
+  <link rel="stylesheet" href="/CSS/nav.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      </script>
+  <style>
+ 
+ nav ul li a.lessons,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+
+.outerwrap {
+
+  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
+ height: 1800px;
+}
+.title {
+  height: 260px;
+  padding: 20px;
+
+}
+.title p {
+  margin-top: 10px;
+}
+.div1 {
+  height:400px;
+  background-image: url(/IMAGES/elvis.jpeg);
+  
+  background-position: -10%;
+  border-radius: 80px 0 0 0;
+  
+}
+.div2 {
+  height:570px;
+  background-color: #fff;
+  
+  display: flex;
+  justify-content: center;
+  
+}
+.div2 div {
+  width: 80%;
+  
+}
+
+.div2 h1 {
+  margin-top: 1.5em;
+}
+.div2 h2 {
+  margin-top: 1.5em;
+}
+.div2 h3 {
+  margin-top: 1em;
+  color: rgb(98, 96, 96);
+}
+.wrapper {
+      padding-block: 2rem;
+      background-color: #fff;
+      width: min(97%, 97rem);
+      margin-inline: auto;
+      display: flex;
+      padding: 0 2% 0 3%;
+      border-radius: 0 0 80px 0;
+
+      gap: 1.5rem;
+      
+      
+     
+      height: 1750px;
+      }
+    .wrapper1 {
+      padding-block: 2rem;
+      
+      width:95%;
+      margin-inline: auto;
+      display: grid;
+      border-radius: 50px;
+      gap: 1.5rem;
+      height: 1200px;
+     
+     
+    }
+   
+    .video-questions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    iframe {
+      width: 100%;
+    }
+  .questions {
+    height: 380px;
+    width: 100%;
+    overflow: scroll;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+    .grid {
+      background-color: aquamarine;
+     
+      height: 230px;
+      width: 100%;
+      
+      
+     color: black;
+      padding: 25px;
+      border-radius: 40px 0 40px 0;
+
+    }
+
+ 
+
+
+
+.div22 {
+  border-radius: 25px;
+  background-color: #fff;
+  padding: 30px 60px;
+  height: 180px;
+  color: #111;
+
+}
+.div22 h2{
+  margin-bottom: 15px;
+}
+
+h1 {
+            color: #3498db;
+        }
+
+        .question {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .options {
+            list-style: none;
+            padding: 0;
+        }
+
+        .option label {
+            display: block;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .option label:hover {
+            background-color: #e0e0e0;
+        }
+
+        .option input[type="radio"] {
+            display: none;
+        }
+
+        .option input[type="radio"]:checked + label {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .submit-btn:hover {
+            background-color: #258cd1;
+        }
+
+        .result {
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+@media screen and (max-width: 61em) {
+  .outerwrap{
+    display: flex;
+    flex-direction: column;
+    height: 2300px;
+  
+    
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 2200px;
+    
+   
+  }
+  .wrapper> div {
+    width: 90%;
+  }
+  .div2 {
+    height: 650px;
+  
+  }
+
+
+}
+@media screen and (max-width: 900px) {
+  .title {
+    height: 300px;
+  }
+  .video-questions {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 540px) {
+  .wrapper1 {
+    height: 1800px;
+  }
+  .title {
+    height: 450px;
+  }
+  .video-questions {
+    grid-template-columns: 1fr;
+  }
+  .grid {
+    height: 350px;
+  }
+  .div22 {
+    height: 280px;
+
+  }
+ 
+}
+
+@media screen and (max-width: 410px) {
+  .grid {
+    height: 440px;
+  }
+  .div22 {
+    height: 380px;
+    padding: 30px 40px;
+  }
+  .div1{
+    background-position-x: 70%;
+  }
+  .video-questions {
+    width: 90%;
+  }
+  .grid {
+    width: 90%;
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+       <img class="header-logo" src="/IMAGES/logo.png" alt="">
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active" href="/html/index.html">Home</a></li>
+      <li><a class="grammar" href="/html/grammar-home.html">Worksheets</li>
+      <li><a class="for-kids" href="/html/for-kids.html">For Kids</a></li>
+      <li><a class="lessons" href="/html/lessons.html">Lessons ▾</a>
+        <ul class="dropdown">
+          <li><a href="/html/lesson-primary.html">Primary</a></li>
+          <li><a href="/html/lessons-secondary.html">Secondary</a></li>
+          <li><a href="/html/lessons-advanced.html">Advanced</a></li>
+        </ul></li>
+      <li><a class="vocab" href="/html/cambridge-tests.html">Cambridge Tests ▾</a>
+        <ul class="dropdown">
+          <li><a href="/html/cambridge-pet.html">Preliminary</a></li>
+          <li><a href="/html/cambridge-first.html">First Certificate</a></li>
+          <li><a href="/html/cambridge-advanced.html">Advanced</a></li>
+       </ul>
+      </li>
+      
+      
+   </ul>
+ </nav>
+ <div class="header3">
+  
+  <a href="/html/Powerpoint.html">Powerpoints</a>
+    <a href="/html/blog-home.html">Blog</a>
+    <a href="/html/reading-home.html">Reading</a>
+    <a href="/html/crafts.html">Crafts</a>
+</div>
+   
+ 
+  <div class="outerwrap">
+    
+    <div id="wrapper" class="wrapper">
+      <div class="wrapper1">
+        <div class="div1">
+          
+        </div>
+        <div class="title"><h1>Biography - Elvis Presley</h1>
+          <p>Watch this short biography on Elvis to get your students thinking and speaking.
+            Activity includes discussion tasks.
+          </p>
+          <p>Elvis is undoubtedly one of the most famous musicians to have ever lived. You may have heard of him,
+            you may even know some of his songs, but do you know where he came from?
+            What inspired him? How did he die? Get your students to watch this short documentary and complete the questions to
+            see how much they know about the 'King of Rock and Roll'.
+             There are some discussion questions after.</p>
+        </div>
+       
+       <div class="video-questions">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iOK-1K-4hYA?si=530WHmWZlWQVmMi1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <div class="questions">
+          <h1>Multiple Choice Quiz</h1>
+
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What type of music inspired him?</p>
+            </div>
+            <ul class="options" id="question1">
+                <li class="option">
+                    <input type="radio" id="q1_option1" name="q1" value="paris">
+                    <label for="q1_option1">Gospel</label>
+                </li>
+                <li class="option">
+                    <input type="radio" id="q1_option2" name="q1" value="berlin">
+                    <label for="q1_option2">Rock</label>
+                </li>
+                <li class="option">
+                    <input type="radio" id="q1_option3" name="q1" value="london">
+                    <label for="q1_option3">Jazz</label>
+                </li>
+            </ul>
+
+            <div class="question">
+                <p>2. In what year did he sign a record deal?</p>
+            </div>
+            <ul class="options" id="question2">
+                <li class="option">
+                    <input type="radio" id="q2_option1" name="q2" value="mercury">
+                    <label for="q2_option1">1950</label>
+                </li>
+                <li class="option">
+                    <input type="radio" id="q2_option2" name="q2" value="jupiter">
+                    <label for="q2_option2">1955</label>
+                </li>
+                <li class="option">
+                    <input type="radio" id="q2_option3" name="q2" value="venus">
+                    <label for="q2_option3">1915</label>
+                </li>
+            </ul>
+
+            <div class="question">
+                <p>3. Where did he go to serve in the army?</p>
+            </div>
+            <ul class="options" id="question3">
+                <li class="option">
+                    <input type="radio" id="q3_option1" name="q3" value="oxygen">
+                    <label for="q3_option1">Italy</label>
+                </li>
+                <li class="option">
+                    <input type="radio" id="q3_option2" name="q3" value="carbon_dioxide">
+                    <label for="q3_option2">Germany</label>
+                </li>
+                <li class="option">
+                    <input type="radio" id="q3_option3" name="q3" value="nitrogen">
+                    <label for="q3_option3">U.K</label>
+                </li>
+            </ul>
+
+            <div class="question">
+                <p>4. Which musicians were surpassing Elvis?</p>
+            </div>
+            <ul class="options" id="question4">
+                <li class="option">
+                    <input type="radio" id="q4_option1" name="q4" value="go">
+                    <label for="q4_option1">The Rolling Stones</label>
+                </li>
+                <li class="option">
+                    <input type="radio" id="q4_option2" name="q4" value="gl">
+                    <label for="q4_option2">Johnny Cash</label>
+                </li>
+                <li class="option">
+                    <input type="radio" id="q4_option3" name="q4" value="au">
+                    <label for="q4_option3">The Beatles</label>
+                </li>
+            </ul>
+
+            <div class="question">
+                <p>5. How did he die?</p>
+            </div>
+            <ul class="options" id="question5">
+                <li class="option">
+                    <input type="radio" id="q5_option1" name="q5" value="mars">
+                    <label for="q5_option1">A heart attack</label>
+                </li>
+                <li class="option">
+                    <input type="radio" id="q5_option2" name="q5" value="venus">
+                    <label for="q5_option2">Cancer</label>
+                </li>
+                <li class="option">
+                    <input type="radio" id="q5_option3" name="q5" value="earth">
+                    <label for="q5_option3">Car accident</label>
+                </li>
+            </ul>
+
+            <button class="submit-btn" type="button" onclick="checkAnswers()">Submit Answers</button>
+        </form>
+
+        <div class="result" id="quiz-result"></div>
+
+         </div>
+       </div>
+        
+  
+        
+  
+       <div class="grid">
+        <div class="div22">
+          <h3>Discussion:</h3>
+          <ul>
+            <li>Do you or does anyone you know like Elvis' music?</li>
+            <li>Why do you think he was so popular?</li>
+            <li>Do you think it's difficult to be famous? What challenges do mega-famous people have?</li>
+            
+          </ul>
+
+
+
+
+        </div>
+      </div>
+       
+      </div>
+      
+      
+        
+      
+      
+      
+       
+     
+     
+        
+    </div>
+
+  </div>
+  <script>
+    function checkAnswers() {
+        const form = document.getElementById("quiz-form");
+        const results = document.getElementById("quiz-result");
+        let score = 0;
+
+        const answers = {
+            q1: "paris",
+            q2: "jupiter",
+            q3: "carbon_dioxide",
+            q4: "au",
+            q5: "mars"
+        };
+
+        for (let i = 1; i <= 5; i++) {
+            const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+            if (selectedAnswer) {
+                if (selectedAnswer.value === answers[`q${i}`]) {
+                    score++;
+                    selectedAnswer.nextElementSibling.style.backgroundColor = "#4CAF50"; // Green for correct
+                } else {
+                    selectedAnswer.nextElementSibling.style.backgroundColor = "#FF5733"; // Red for incorrect
+                }
+            }
+        }
+
+        results.innerHTML = `You got ${score} out of 5 questions correct.`;
+    }
+</script>
+</body>
+
+</html>
