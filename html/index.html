@@ -1,668 +1,1000 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Free printables, english lesson plans, video activities. Tests for primary,
-    secondary and adults">
-<link rel="canonical" href="https://eslenglishneeds.com/"><meta name="keywords" content="worksheets, english lesson plans, teach english, pdf, worksheets, printables, liveworksheets,
-  eslcollective, twinkl, british council, cambridge, adult class, primary class, secondary class,
-  advanced class, class prep, teacher, esl teacher, english teacher, exam, secondary, primary, for kids, for adults, free plans, free,
-  beginnerss, intermediate, resources, materials, class prep, preparation,
-  linguahouse, preliminary, b1, b2, first, c1, detailed lesson plan, template,
-  grade 1, grade 2, grade 3, grade 4, grade 5 video, video comprehension, video with questions
-  " />
-  " />
-  <title>Eslenglish - Free worksheets and lessons</title>
-  <link rel="canonical" href="https://eslenglishneeds.com/">
-  <link rel="icon" href="/IMAGES/logo.png">
-  <link rel="stylesheet" href="/CSS/nav.css">
-  <link rel="stylesheet" href="/html/html.html">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-      <script>
-        function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-      
-        for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 150;
-      
-          if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
-          }
-        }
-      }
-      
-      window.addEventListener("scroll", reveal);
-      </script>
- 
-<style>
+  <title>Document</title>
+  <style>
 
-nav ul li a.active,
-nav ul li a:hover{
-  color: #111;
-  background: #fff;
+
+    .top-header {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  position: absolute;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  
+
 }
-.outerwrap {
 
-  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgba(0,212,255,1) 100%);
- height: 3200px;
+.top-profile-picture {
+  height: 52px;
+  width: 52px;
+  border-radius: 26px;
+  object-fit: cover;
+  margin-top: 5.5px;
+  margin-left: 12.5px;
+
+}
+
+.logo-div {
+display: flex;
+
+}
+.logo {
+  margin-right: 60px;
+  margin-left: 15px;
+  margin-top: 21px;
+  font-weight: 600;
+  color: white;
+  
+
+  
+}
+
+/* Dropdown Button */
+.dropbtn {
+  margin-right: 25px;
+    margin-top: 10.5px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  position: absolute;
+  border-radius: 2px;
+  background-color: rgb(47, 47, 47);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+  display: none;
+  font-size: 20px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color:rgb(96, 95, 95)  ;
+}
+
+.dropdown-content a:active {
+  background-color: whitesmoke;
+  color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  animation: fade 0.6s ease-in-out;
+  display: block;
+}
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+	height: fit-content;
+	
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+
+h1 {
+	font-weight: 300;
+	font-size: 60px;
+	line-height: 1.2;
+	margin-bottom: 15px;
+	transition: transform ease-in 0.15s;
+	width: 100%;
+	text-align: center;
+	
+}
+
+h1:hover {
+	transform: scale(1.03);
+}
+
+
+.content>h1:hover {
+	transform: background-color rgba(0, 0, 0, 0.0);
+	
+	
+}
+.showcase {
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+  
+	
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: co ;
+  
+  
+	
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	
+}
+
+.content {
+	z-index: 2;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	background: var(--primary-color);
+	color: rgb(206, 55, 55);
+	border-radius: 5px;
+	border: solid rgb(80, 80, 80) 1px;
+	height: 50px;
+  width: 150px;
+	opacity: 0.7;
 }
 .divs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
-  height: 329px;
-  
+  height: 200px;
+  padding: 20px;
 }
-.div1 video {
-   
-  width: 100%;
+.div1 {
+  text-align: center;
+  height: 60px;
 }
 .div2 {
-  padding: 28px 40px 0 80px;
- 
-  
-  
-}
-
-
-.div2 h1 {
-  
-  color: #fff;
-}
-.div2 h2 {
-  margin-top: 1.5em;
-}
-.div2 h3 {
-
-  margin-top: 1em;
-  color: rgb(98, 96, 96);
-}
-.buttons {
-  margin-top: 30px;
-  height: 80px;
-  
+  height:80px;
+  text-align: center;
   display: flex;
   justify-content: space-around;
+
 }
-.buttons button {
-  height: 60px;
-  width: 150px;
-  border-radius: 30px;
-  background: linear-gradient(90deg, rgb(6, 0, 108) 0%, rgb(93, 129, 206) 42%, rgb(3, 119, 142) 100%);
-  border: solid black 4px;
+.outerwrap {
+height: 3500px;
 }
-.buttons a {
-  color: white;
- font-weight: 600;
-  text-decoration: none;
-  font-size: 21px;
+
+.wrapper {
+    padding-block: 2rem;
+    background-color: #fff;
+    width: min(97%, 97rem);
+    margin-inline: auto;
+    display: flex;
+    padding: 0 2% 0 3%;
+    border-radius: 0px 0 80px 0;
+
+    gap: 0.5rem;
+    
+    
+   
+    height: 2400px;
+    }
+  .wrapper1 {
+    
+    
+    width:75%;
+    margin-inline: auto;
+    display: grid;
+   
+    gap: 2rem;
+    height: 1600px;
+    
+   
+   
+  }
+  .wrapper11 {
+    overflow: scroll;
+   
+    margin-inline: auto;
+    display: grid;
+    padding-left: 5px;
+    gap: 1rem;
+    height: 700px;
+  }
+  .wrapperh2 {
+    background-color: bisque;
+    padding: 10px;
+   
+    
+  }
+  .wrapper2 {
+    padding-block: 2rem;
+    width:25%;
+    margin-inline: auto;
+    display: grid;
+    gap: 1.5rem;
+    border-left: solid ;
+    
+   
+    height: 1600px;
+   
+  }
+  
+
+  .grid {
+   background-color: #fff;
+    height: 300px;
+    width: 98%;
+    border: 3px black solid;
+   
+    
+    
+  color: black;
+    
+    border-radius: 40px 0 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+
+  }
+
+.div111 {
+padding: 10px;
+
+}
+.div222 {
+display: flex;
+justify-content: space-around;
+background-color: rgb(140, 177, 222);
+border-radius: 0 0 37px 0;
+padding-top: 10px;
+font-family: 'Poppins', sans-serif;
+}
+.div222 button {
+background-color: #fff;
+font-family: 'Poppins', ;
+color: #111;
+height: 37.5px;
+width: 90px;
+text-decoration: none;
+list-style: none;
+border-radius: 5px;
+box-shadow: 1px 2px 0 0 rgb(108, 108, 109);
+font-size: 15px;
+
+}
+
+
+.wrap3 {
+height: 430px;
+width: 200px;
+right: 0;
+border-style: solid ;
+text-decoration: none;
+list-style-type: none;
+margin: 33px;
+padding: 30px;
+
+
+}
+.wrap3 > ul {
+list-style-type: none;
+
+}
+.wrap3  a {
+color: #111;
+
+}
+.div11 img {
+height: 294px;
+width: 100%;
+border-radius: 37px 0 0 0;
+}
+.div22 {
+
+
+display: grid;
+grid-template-rows: 75% 25%;
+
+height: 294px;
+}
+
+@media screen and (max-width: 61em) {
+.outerwrap{
+  display: flex;
+  flex-direction: column;
+  height: 2900px;
+
+  
 }
 .wrapper {
-      padding-block: 2rem;
-      
-      
-      margin-inline: auto;
-
-      height: 2250px;
-      }
-
-    .wrapper1 {
-      padding-block: 2rem;
-      background-color: #fff;
-      padding: 50px;
-      margin-inline: auto;
-      display: grid;
-     
-      
-      height: 400px;
-     
-     
-     
-    }
-    .wrapper1 h1 {
-      font-size: 60px;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .wrapper1 h3 {
-      text-align: center;
-      line-height: 30px;
-      margin-top: 1.5em;
-    }
-    .wrapper2 {
-      
-      background-color: #fff;
-      width: 100%;;
-      margin-inline: auto;
-      display: grid;
-      grid-template-columns:1.8fr 1.2fr ;
-      
-      
-      
-     
-      height: 500px;
-     
-    }
-    .right {
-      background-color: rgb(140, 177, 222);
-      height: 500px;
-      padding: 30px;
-      
-      
-    }
-    .right div {
-      color: #fff;
-      font-size: 50px;
-      font-weight: 700;
-      
-    }
-  .left {
-    padding: 30px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: #111;
+  display: flex;
+  flex-direction: column;
+  height: 2100px;
   
-  }
-    .grid {
-     width: 90%;
-      height: 100px;
-      background-color: #fff;
-      
-      
-     
-      padding: 20px;
-      
-    color: black;
-      padding-top: 10px;
-      border: solid;
-      border-radius: 40px 0 40px 0;
-      display: grid;
-      grid-template-rows: 50% 50%;
-      
-      
-
-    }
-
- 
-
-    .wrapper3 {
-      
-      background-color: rgb(140, 177, 222);
-      width: 100%;
-      margin-inline: auto;
-      display: grid;
-      grid-template-columns:31% 31% 31%;
-      gap: 2rem;
-      padding: 2rem;
-      color: white;
-      
-     
-      height: 680px;
-     
-    }
-    .two, .three, .four {
-      height: 300px;
-      
-      border: solid white 12px;
-      border-radius: 60px;
-      padding: 30px 100px;
-      font-size: 32px;
-      text-decoration: overline;
-      
-
-    }
-    .two, .three, .four h3{
-      color: #fff;
-      
-      
-      
-    }
-    
-   
-    .four {
-      color: white;
-    }
-    .one { 
-      
-     
-      grid-column: span 3;
-      
-     
-    }
-    .one h1 {
-      font-size: 60px;
-      
-    }
-
-    .wrapper4 {
-      
-      
-      width: 100%;
-      margin-inline: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      height: 460px;
-     
-    }
-    .five {
-      height: 368px;
-  
-      padding: 45px 25px 0 45px;
-    }
-    .five h1 {
-      color: #fff;
-    }
-    .five h3 {
-      margin-top: 1.5em;
-      color: #fff;
-    }
-    .six video {
-      width: 100%;
-
-    }
-    .wrapper5 {
-      padding-block: 2rem;
-      background-color: #fff;
-      padding: 50px;
-      margin-inline: auto;
-      display: grid;
-     
-      
-      height: 460px;
-     
-     
-     
-    }
-    .wrapper5 h1 {
-      font-size: 60px;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .wrapper5 h3 {
-      text-align: center;
-      line-height: 30px;
-      margin-top: 1.5em;
-    }
-    .footer {
-      display: flex;
-      margin-top: 330px;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 190px;
-     
-      
-
-    }
-
-@media screen and (max-width: 1100px) {
-  .wrapper3 {
-    height: 700px;
-    grid-template-columns: 1fr;
-    
-  }
-  .one {
-    grid-column: span 1;
-  }
-
-  .two, .three, .four {
-    height: 160px;
-  }
-
-  .six {
-    display:none;
-  }
-  .wrapper4 {
-    grid-template-columns: 1fr;
-  }
-  .five div {
-    vertical-align: middle;
-    align-items: center;
-    text-align: center;
-  }
  
 }
-@media screen and (max-width: 920px) {
-  .divs{
-    display: flex;
-    flex-direction: column;
-    height: 640px;
-    
-    align-items: center;
-  
-    
-  }
-  
-  .div2 {
-    display: grid;
-    grid-template-columns: 1fr ;
-    height: 200px;
-  
-  }
-.div2 h1{
-  width: 100%;
-  font-size: 50px;
-  
-}
-.div2 li {
-  display: none;
-}
-
-}
-
-
-@media screen and (max-width: 680px) {
-  .outerwrap {
-    height: 3600px;
-  }
-  
-  .wrapper2 {
-    grid-template-columns: 1fr;
-    height: 600px;
-
-  }
-  .right {
-    height: 300px;
-   
-    
-  }
-  .left {
-    row-gap: 10px;
-  }
-  
-  .left div {
-    height: 60px;
-  }
-  .wrapper5 {
-    height: 600px;
-  }
-}
-
-@media screen and (max-width: 562px)
-{
-  .wrapper1 {
-    height: 510px;
-  }
-  .wrapper5 { 
-    display: none;
-  }
-  .wrapper3 {
-    height: 570px;
-   
-   
-  }
-  .div2 {
-    padding: 28px 40px 0 60px;
-  }
-  .one h1 {
-    margin-top: 15px;
-  }
-  .two, .three, .four {
-    font-size: 24px;
-    height: 90px;
-    border: solid white 7px;
-    padding: 20px 50px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .two, .three, .four {
-    font-size: 21px;
-    padding: 20px 30px;
-    
-    
-  }
-  .div2 {
-    padding: 28px 30px 0 60px;
-  }
-  .div2 h1 {
-    font-size: 40px;
-  }
-  
-  .buttons {
-    display: grid;
-    row-gap: 13px;
-    
-  }
-  
-}
-@media screen and (max-width: 409px) {
-  .right h1 {
-    font-size: 69px;
-  }
-  .two, .three, .four {
-    
-    
-    border: solid white 4px;
-   
-  }
- 
 .wrapper1 {
-    height: 590px;
-  }
+  height: 1300px;
 }
-@media screen and (max-width: 330px){
-  .two, .three, .four {
-    font-size: 19px;
-    padding: 15px 25px;
-    
-  }
-  .wrapper1 h1 {
-    font-size: 35px;
-  }
-  .right h1 {
-    font-size: 59px;
-  }
+.wrapper> div {
+  width: 90%;
+}
+.wrapper2 {
+height: 400px;
 
-  .one h1 {
-    font-size: 59px;
-    margin-top: 10px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+}
+@media screen and (max-width: 800px){
+.grid {
+  grid-template-columns: 100%;
+  height: 600px;
+  width: 450px;
+
+}
+.outerwrap{
+ height: 3700px;
+}
+.wrapper {
+height: 2900px;
   }
+.wrapper1 {
+  height: 2400px;
+}
+
+}
+@media screen and (max-width: 44em) {
+.wrapper2 {
+  grid-template-columns: 1fr;
+  border: none;
+  
+}
+.wrapper2 div {
+  width:80%;
+  height: 270px;
+}
+.outerwrap{
+ height: 4500px;
+}
+.wrapper {
+height: 3300px;
+  }
+.wrapper1 {
+  margin-top: 50px;
+}
+
+
+}
+
+@media screen and (max-width:520px) {
+
+.grid {
+  grid-template-columns: 100%;
+  height: 600px;
+  width: 400px;
+
+}
+
+
+
+}
+@media screen and (max-width:465px) {
+.div2 {
+height:460px;
+}
+.grid {
+
+  height: 600px;
+  width: 350px;
+
+}
+.div1 {
+  background-position-x: 70%;
+}
+
+
+}
+@media screen and (max-width:400px) {
+.wrapper {
+padding: 0 2% 0 0;
+    }
+.wrapper1 {
+width:100%;   
+
+}
+.div2 {
+  height: 450px;
+}
+.grid {
+
+height: 600px;
+width: 320px;
+
+}
+
+.header3 a{
+  font-size: 12px;
+}
+
+
+}
+@media screen and (max-width:364px){
+.outerwrap{
+ height: 4800px;
+}
+.wrapper {
+height: 3700px;
+  }
+.wrapper1 {
+  height: 2800px;
+}
+.grid {
+
+height: 620px;
+width: 285px;
+
+}
+.div222{
+justify-content: left;
+}
+.div22{
+height: 316px;
+}
 }
 
 
   </style>
 </head>
 <body>
-  <nav>
-    <div class="logo">
-       <img class="header-logo" src="/IMAGES/logo.png" alt="">
+  <nav class="top-header">
+    <div class="logo-div"> 
+      <img class="top-profile-picture" src="/IMAGES/logo.png" alt="profile picture">
+      
+
     </div>
-    <input type="checkbox" id="click">
-    <label for="click" class="menu-btn">
-    <i class="fas fa-bars"></i>
-    </label>
-    <ul>
-      <li><a class="active" href="/html/index.html">Home</a></li>
-      <li><a class="grammar" href="/html/grammar-home.html">Worksheets</a></li>
-      <li><a class="for-kids" href="/html/for-kids.html">For Kids</a></li>
-      <li><a class="lessons" href="/html/lessons.html">Lessons ▾</a>
-        <ul class="dropdown">
-          <li><a href="/html/lesson-primary.html">Primary</a></li>
-          <li><a href="/html/lessons-secondary.html">Secondary</a></li>
-          <li><a href="/html/lessons-advanced.html">Advanced</a></li>
-        </ul></li>
-      <li><a class="vocab" href="/html/cambridge-tests.html">Cambridge Tests ▾</a>
-        <ul class="dropdown">
-        <li><a href="/html/cambridge-pet.html">Preliminary</a></li>
-        <li><a href="/html/cambridge-first.html">First Certificate</a></li>
-        <li><a href="/html/cambridge-advanced.html">Advanced</a></li>
-       </ul>
-      </li>
+    
+    
+    <div class="dropdown">
+      <img class="dropbtn" src="/images/hamburger-menu.svg" alt="menu">
+      <div class="dropdown-content">
+        <a href="/html/lessons.html" target="_blank">Lessons</a>
+       <a href="/html/grammar-home.html">Worksheets</a>
+        <a href="/html/cambridge-tests.html" target="_blank">Exams</a>
+        <a href="/html/blog-home.html">Blog</a>
+        <a href="/html/for-kids.html">For Kids</a>
+      </div>
+    </div>
+  </nav>
+  <div class="showcase">
+    <div class="video-container">
+      <video src="/IMAGES/animate_-_22182 (540p).mp4" autoplay muted loop></video>
+    </div>
+    <div class="content">
+      <h1 >Create your<span style="font-weight:700"> own</span> classroom...
+        <h3>Free resources and tools for ESL teachers and students</h3>
+     </h1>
       
       
-   </ul>
- </nav>
- <div class="header3">
-  
-  <a href="/html/Powerpoint.html">Powerpoints</a>
-    <a href="/html/blog-home.html">Blog</a>
-    <a href="/html/reading-home.html">Reading</a>
-    <a href="/html/crafts.html">Crafts</a>
-</div>
-   
+    </div>
+    
  
+    </div>
+    
+  </div>
   <div class="outerwrap">
     <div class="divs">
       <div class="div1">
-        <video  autoplay loop src="/IMAGES/classroom-vid.mp4"></video>
-      </div>
-     <div class="div2">
-      <div>
-        <h1>Get your students talking!</h1>
-        <ul>
-          <li><h3>Step-by-step lesson plans</h3></li>
-          <li><h3>Video activities</h3></li>
-          <li><h3>Fun group projects</h3></li>
-          <li><h3>All downloadable as PDFs</h3></li>
-         
-        </ul>
-       
+        <h2> ESL Worksheets and Lesson Plans for English Teachers</h2>
 
       </div>
-      <div class="buttons">
-        <button> <a href="/html/lessons.html">Free lessons</a> </button>
-      <button> <a href="/html/grammar-home.html">Worksheets</a> </button>
+      <div class="div2">
+        <a href="/html/lessons.html" class="btn">Lessons</a>
+        <a href="/html/grammar-home.html" class="btn">Worksheets</a>
+        <a href="/html/blog-home.html" class="btn">Blog</a>
       </div>
-
-    </div>
+      
+  
+   
     
       
     </div>
     <div id="wrapper" class="wrapper">
       <div class="wrapper1">
-        <div>
-          <h1>Welcome</h1>
-          <h3>... to our vibrant world of English grammar! We've created a space where the intricacies of grammar come alive with energy and expertise. Our team of dedicated experts, who are passionate about language
-             learning, has crafted a treasure trove of free materials that are not only informative but also fun and
-              dynamic.
-          </h3>
-          
+        <div class="wrapperh2">
+          <h2>Latest Lesson Plans:</h2>
         </div>
-       
-        
-        
-
-
-           
-       
-      </div>
-      
-      <div class="wrapper2">
-        <div class="right">
-          <div>
-            <h1>Recent posts...</h1>
+        <div class="wrapper11">
+          <div class="grid">
+            <div class="div11">
+              <img src="/IMAGES/woodstock99.jpeg" alt="">
+            </div>
+            <div class="div22">
+              <div class="div111">
+                <h2>C1 Report Writing - Woodstock 99</h2>
+                <p>This lesson will cover how to write a report including the basic structure,
+                   objective and useful expressions. Once familiar, the students will use a 
+                   short documentary about the Woodstock 99 disaster concert to put 
+                   what they have learned into practice. Rock on!</p>
+  
+              </div>
+              
+             <div class="div222">
+              
+                
+                <button><a href="/IMAGES/lesson-plan-woodstock.pdf">Lesson Plan</a></button></li>
+                <button><a href="/IMAGES/C1 Report - Woodstock 99.pptx">PPT</a></button></li>
+                <button><a href="https://www.youtube.com/watch?v=gH6-nBwOwkA">Video</a></button></li>
+                
+               
+              
+  
+            </div>
+            
           </div>
-        </div>
-        <div class="left">
-         <a href="/html/videos/lion-king.html"><div class="grid"><h3>Video Lesson: Lion King</h3></div></a>
-         <a href="/html/lessons-primary-routines.html"><div class="grid"><h3>Lesson Plan: Routines</h3></div></a>
-         <a href="/html/grammar-conditionals.html"><div class="grid"><h3>Worksheets: Conditionals</h3></div></a>
-         <a href="/html/videos/grizzly-man.html"><div class="grid"><h3>Video Lesson: Grizzly Man</h3></div></a>
-        </div>
-        
-        
-        
-      </div>
-      <div class="wrapper5">
-        <div>
           
-          <h3>Learning English grammar doesn't have to be a dull and daunting task. We believe that a 
-              lively approach can make all the difference, and our resources reflect just that. Whether you're 
-              a student, a teacher, or a lifelong learner, you'll find a wide array of engaging materials here to 
-             ignite your enthusiasm for grammar.
-            </h3>
-            <h3> Join us on this grammatical journey, where you'll discover a world of knowledge, creativity, and 
-                 interactivity. Explore our free resources and let the joy of learning English grammar inspire you 
-                on your path to language mastery. Welcome to an English grammar experience that's both educational and 
-                exciting.
-              </h3>
-        </div>
-       
-        
-        
-
-
-           
-       
-      </div>  
-      <div class="wrapper3">
-        <div class="one">
-          <h1>Discover more...</h1>
-        </div>
-        <a href="/html/cambridge-tests.html"> <div class="two">
-          <h3>Practice Exams</h3>
-          
-        </div></a>
-        <a href="/html/reading-home.html"><div class="three"><h3>Reading and Stories</h3></div></a>
-        <a href="/html/for-kids.html"><div class="four"><h3>For Kids</h3></div></a>
-       
-        
-        
-        
-      </div>
-      <div class="wrapper4" >
-        <div class="five">
-          <div>
-            <h1>Make the classroom your own</h1>
-            <h3>With all these free resources, it's never been easier
-              to completely customise your classes and teach the way that
-              suits you.
-            </h3>
-           
-    
+            
           </div>
-          <div class="buttons">
-            <button> <a href="/html/index.html">Back to top</a> </button>
+
+          <div class="grid">
+            <div class="div11">
+              <img src="/IMAGES/routine.jpg" alt="">
+            </div>
+            <div class="div22">
+              <div class="div111">
+                <h2>Routines and Frequency</h2>
+            <p>Make sure your students have no problems speaking about their routines and habits
+  
+            </p>
+  
+              </div>
+              
+            <div class="div222">
+             <button><a href="/Powerpoint/Present Perfect Simple Continuous.pptx" target="_blank">PPT</a></button>
+             <button><a href="/IMAGES/Lesson plan - routine.pdf" target="_blank">Lesson plan</a></button>
+             <button><a href="/IMAGES/present-simple.pdf" target="_blank">Worksheet 1</a></button>
+             <button><a href="https://www.perfect-english-grammar.com/support-files/adverbs_of_frequency.pdf" target="_blank">Worksheet 2</a></button>
+            
+               
+              
+  
+            </div>
+            
+          </div>
+          
+          
+            
+          </div>
+          <div class="grid">
+            <div class="div11">
+              <img src="/IMAGES/formal-linkers.jpeg" alt="">
+            </div>
+            <div class="div22">
+              <div class="div111">
+                <h2>Formal Linkers - FCE</h2>
+                <p>A new worksheet for B2+ students to help them add more 
+                  cohesion to their writing through the use of formal linkers 
+                  and connectors. Download the handout and key below:
+                </p>
+  
+              </div>
+              
+             <div class="div222">
+              
+                
+                <button><a href="/IMAGES/formal-linkers-2.docx">Worksheet</a></button></li>
+                <button><a href="/IMAGES/key-formal-linkers.docx">Key</a></button></li>
+           
+                
+               
+              
+  
+            </div>
+            
+          </div>
+          
+            
+          </div>
          
+          <div class="grid">
+            <div class="div11">
+              <img src="/IMAGES/weekend-off.jpeg" alt="">
+            </div>
+            <div class="div22">
+              <div class="div111">
+                <h2>C1 Inversions - A Weekend Off</h2>
+            <p>This is a grammar lesson focusing on inversions based 
+              around the topic of the stresses of parenthood. Students 
+              read a text about new parents who get a weekend off, then 
+              transform the text using inversions.
+               Download the handout and teacher’s notes below.
+            </p>
+  
+              </div>
+              
+            <div class="div222">
+              
+                
+                <button><a href="/IMAGES/a-weekend-off-teachers-notes (1).docx" >Lesson Plan</a></button></li>
+                <button><a href="/IMAGES/a-weekend-off-student-handout (1).docx">Worksheet</a></button></li>
+                <button><a href="https://freeenglishlessonplans.com/wp-content/uploads/2022/03/Inverted-conditionals-1.pdf" target="_blank">Worksheet 2</a></button></li>
+                
+               
+              
+  
+            </div>
+            
           </div>
+          
+            
+          </div>
+          <div class="grid">
+            <div class="div11">
+              <img src="/IMAGES/conditionals.jpeg" alt="">
+            </div>
+            <div class="div22">
+              <div class="div111">
+                <h2>Advanced Conditionals</h2>
+            <p>Below are two comprehensive presentations explaining and practicing
+              advanced conditional forms. These include mixed and inverted and how to use 
+              them to your benefit in the exam with example tasks. Essential for any C1 conditionals class.
+            </p>
+  
+              </div>
+              
+            <div class="div222">
+              
+                
+                <button><a href="/IMAGES/Advanced-Conditionals-Revision.pptx" >Conditionals ppt</a></button>
+                <button><a href="/IMAGES/Inverted Conditional Students copy.pptx">Inverted ppt</a></button>
+               
+                
+               
+              
+  
+            </div>
+            
+          </div>
+          
+          
+            
+          </div>
+
+          
+          <div class="grid">
+            <div class="div11">
+              <img src="/IMAGES/lottery.jpeg" alt="">
+            </div>
+            <div class="div22">
+              <div class="div111">
+                <h2>C1 Conditionals - Lottery</h2>
+            <p>Teach the advanced conditional forms with this lesson plan and worksheet.
+              Practice using inversions and mixed form to this news article about winning the lottery (or not winning).
+  
+            </p>
+  
+              </div>
+              
+            <div class="div222">
+              
+                
+                <button><a href="/IMAGES/third-conditional-teachers-notes.docx" >Lesson Plan</a></button>
+                <button><a href="/IMAGES/third-conditional-worksheet (2).docx">Worksheet</a></button>
+               
+                
+               
+              
+  
+            </div>
+            
+          </div>
+          
+          
+            
+          </div>
+          <div class="grid">
+            <div class="div11">
+              <img src="/IMAGES/football.jpeg" alt="">
+            </div>
+            <div class="div22">
+              <div class="div111">
+                <h2>Football</h2>
+            <p>This free ESL lesson plan on football/soccer has been designed for adults and
+               young adults at an intermediate (B1/B2) to 
+              advanced (C1/C2) level and should last around 45 to 60 minutes for one student.
+  
+            </p>
+  
+              </div>
+              
+            <div class="div222">
+             <button><a href="https://yourenglishpal.com/wp-content/uploads/2022/10/Your-English-Pal-ESL-Lesson-Plan-Football-Soccer-Student-v1.pdf" target="_blank">Worksheet</a></button></li>
+            
+                <button><a href="https://yourenglishpal.com/wp-content/uploads/2022/10/Your-English-Pal-ESL-Lesson-Plan-Football-Soccer-v1.pdf" target="_blank">Key</a></button></li>
+            
+               
+              
+  
+            </div>
+            
+          </div>
+          
+          
+            
+          </div>
+
         </div>
-        <div class="six"><video src="/IMAGES/animate_-_22182 (540p).mp4"></video>
+       
+
+
+
+
+
+
+
+        <div class="wrapperh2">
+          <h2>Latest Video Lessons:</h2>
+        </div>
+        <div class="wrapper11">
+          <div class="grid">
+            <div class="div11">
+              <img src="/IMAGES/elvis.jpeg" alt="">
+            </div>
+            <div class="div22">
+              <div class="div111">
+                <h2>Elvis - Autobiography</h2>
+                <p>Watch this short biography on Elvis to get your students thinking and speaking.
+                  Activity includes discussion tasks.</p>
+  
+              </div>
+              
+             <div class="div222">
+              
+                
+                <button><a href="/html/videos/elvis.html">Go</a></button></li>
+
+                
+               
+              
+  
+            </div>
+            
+          </div>
+          
+            
+          </div>
+         
+          <div class="grid">
+            <div class="div11">
+              <img src="/IMAGES/what-happens-next.jpg" alt="">
+            </div>
+            <div class="div22">
+              <div class="div111">
+                <h2>What Happens Next</h2>
+            <p>Have fun with your students watching this compilation video where 
+              we pause right before the action and we ask: "What happens next??..." 
+            </p>
+  
+              </div>
+              
+            <div class="div222">
+              
+                
+                <button><a href="/html/videos/what-happens-next.html" >Go</a></button></li>
+              
+  
+            </div>
+            
+          </div>
+          
+            
+          </div>
+          <div class="grid">
+            <div class="div11">
+              <img src="/IMAGES/penguin.jpg" alt="">
+            </div>
+            <div class="div22">
+              <div class="div111">
+                <h2>Nihlistic Penguin</h2>
+            <p>Watch a clip from this philosophical nature documentary to get your students thinking and speaking.
+              Activity includes discussion tasks.
+            </p>
+  
+              </div>
+              
+            <div class="div222">
+              
+                
+                <button><a href="/html/videos/nihlist-penguin.html" >Go</a></button>
+
+               
+                
+               
+              
+  
+            </div>
+            
+          </div>
+          
+          
+            
+          </div>
+          <div class="grid">
+            <div class="div11">
+              <img src="/IMAGES/grizzly.jpeg" alt="">
+            </div>
+            <div class="div22">
+              <div class="div111">
+                <h2>Grizzly Man - Nature</h2>
+            <p>Watch a clip from this fascinating documentary that your students are sure to love.
+              Activity includes reading, video and discussion tasks. Activity duration: 30 minutes
+  
+            </p>
+  
+              </div>
+              
+            <div class="div222">
+              
+                
+                <button><a href="/html/videos/grizzly-man.html" >Go</a></button>
+
+               
+                
+               
+              
+  
+            </div>
+            
+          </div>
+          
+          
+            
+          </div>
+
         </div>
         
+
+       
+      </div>
+
+
+
+
+      <div class="wrapper2">
+        <div class="wrapperh2">
+          <h2>Downloadable PDFs</h2>
+        </div>
+        <div class="wrap3">
+          <h3>Worksheets</h3>
+          <ul>
+            <li><a href="/html/grammar-to-be.html">To be</a></li>
+            <li><a href="/html/grammar-tenses">Present tense</a></li>
+            <li><a href="/html/grammar-tenses.html">Past tense</a></li>
+            <li><a href="/html/grammar-tenses.html">Future tense</a></li>
+            <li><a href="/html/grammar-conditionals.html">First conditional</a></li>
+            <li><a href="/html/grammar-conditionals.html">Second conditional</a></li>
+            <li><a href="/html/grammar-conditionals.html">Third conditionals</a></li>
+            <li><a href="/html/grammar-passive-voice.html">Passive voice</a></li>
+            <li><a href="/html/grammar-adverb.html">Adverbs</a></li>
+            <li><a href="/html/grammar-adjectives.html">Adjectives</a></li>
+            <li><a href="/html/grammar-prepositions.html">In, on, at</a></li>
+            <li><a href="/html/grammar-present-perfect.html">For, since</a></li>
+            <li><a href="/html/grammar-clauses.html">Clauses</a></li>
+            <li><a href="/html/grammar-linkers.html">Connectors</a></li>
+    
+          </ul>
+          
+          
+        </div>
+        <div class="wrap3">
+          <h3>Reading</h3>
+        <ul>
+          <li><a href="/html/reading-home.html">Primary stories</a></li>
+          <li><a href="/html/reading-secondary.html">Intermediate stories</a></li>
+          <li><a href="/html/reading-advanced.html">Advanced stories
+          </a></li>
+        </ul>
+       
+          
+          
+        </div>
+
+        <div class="wrap3">
+          <h3>Practice Tests</h3>
+        <ul>
+          <li><a href="/html/cambridge-pet.html">Preliminary reading</a></li>
+          <li><a href="/html/cambridge-pet.html">Preliminary listening</a></li>
+          <li><a href="/html/cambridge-first-reading.html">First reading</a></li>
+          <li><a href="/html/cambridge-first-listening.html">First listening</a></li>
+          <li><a href="/html/cambridge-advanced-reading.html">Advanced reading</a></li>
+          <li><a href="/html/cambridge-advanced-listening.html">Advanced listening</a></li>
+        </ul>
+       
+          
+          
+        </div>
         
       </div>
+      
+        
+      
       
       
        
      
      
         
-    </div>
-
-    <div class="footer">
-      <div>
-        <h3>
-          #eslenglishplans #twinkl #islcollective #liveworksheets 
-          #englishcrafts #worksheetspdf 
-          #pdf #englishworksheets #foradults #forkids #wordwall 
-          #macmillan #cambridge #britishcouncil #islcollectiveenglish
-          #interacticeworksheets #isl #britishcouncilkids
-          #oxfordpremium #printable #fifthgrade #englishvocabulary 
-          #vocabulary #kidsgames #englishgames #bamboozle #kahoot
-          #eslkidsgames #easter #halloween #christmas #year5 #pasttense 
-          #bookreport #animalfarm #greatgatsby #shakespeare #ted #eslbrains 
-          #intermediate #beginner #adults #advanced #proficient #eslteacher 
-          #teacher #tefl #teflteacher #celta #celtateacher #eslpals 
-          #youtube #kidssongs #teachingenglish #off2class #newsela 
-          #linguahouse #exameng #pdf #tesol #ielts #b2 #b2first #preliminary 
-          #b1 #forteacher #freeactivities #lazyteacher #busyteacher
-          #italki
-
-        </h3>
-      </div>
-      
     </div>
 
   </div>
-
-</body>
 </html>
