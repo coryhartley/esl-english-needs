@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +9,34 @@
 free lesson plans, a2 esl lesson plans, b2 esl lesson plans, b1 es lesson plans, lesson plans for adults,
 past simple v past continuous worksheet pdf, christmas worksheet pdf, 
 easter worksheets pdf, halloween worksheets pdf
-  <title>Eslenglishneeds - Free Lesson Plans made by teachers</title>
-  <meta name="description" content="Explore our free ESL lesson plans made by teaching professionals
-  - No prep required - Lesson plans for Primary, Secondary and Advanced. Free worksheets and 
+  " />
+  <title>Lesson Plans made by teachers - Templates</title>
+  <meta name="description" content="Explore our lesson plan templates made by teaching professionals
+  - No prep required - ESL lesson plans for Primary, Secondary and Advanced. Free worksheets and 
   presentations. Video activities. Crafts">
   <link rel="icon" href="/IMAGES/logo.png">
-
-
-   
   <style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  list-style-type: none;
+  max-width: 100%;
+}
 
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+	height: fit-content;
+	
+}
 
-    .top-header {
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+.top-header {
   display: flex;
   justify-content: space-between;
   border-top: 0;
@@ -122,30 +137,6 @@ display: flex;
   100% { opacity: 1; }
 }
 
-
-
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-  list-style-type: none;
-  max-width: 100%;
-}
-
-body {
-	font-family: 'Open Sans', sans-serif;
-	line-height: 1.5;
-	height: fit-content;
-	
-}
-
-a {
-	text-decoration: none;
-	color: var(--primary-color);
-}
-
-
 h1 {
 	font-weight: 300;
 	font-size: 4.3rem;
@@ -223,46 +214,80 @@ h1:hover {
 	z-index: 2;
 }
 
-.btn {
-	display: inline-block;
-	padding: 8px 20px;
-	background: var(--primary-color);
-	color: rgb(206, 55, 55);
-	border-radius: 5px;
-	border: solid rgb(80, 80, 80) 1px;
-  box-shadow: 0.7px 1px 0 0 rgb(16, 16, 16);
-	height: 50px;
-  width: 20vw;
-	opacity: 0.7;
-  font-size: 20px
-  
+h2 {
+  color: #000;
+  text-align: center;
+  font-size: 2em;
+  margin: 20px 0;
 }
-.outerwrap {
-height: auto;
-margin-inline: 5.5%;
+
+.warpper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.divs {
-  height: 200px;
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0px 2px;
+  background: #32557f;
+  display: inline-block;
+  color: #fff;
+  border-radius: 3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+
+.panels {
+  background: #fff;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height: 800px;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 3px;
+  overflow: hidden;
   padding: 20px;
 }
-.div1 {
-  text-align: center;
-  height: 60px;
-}
-.div1>h2 {
-  font-size: 1.2rem;
-}
-.div2 {
-  height:80px;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
 
+.panel {
+  display: none;
+  animation: fadein 0.8s;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-.latest {
-  margin-top: 90px;
+.panel-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.radio {
+  display: none;
+}
+
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel
+ {
+  display: block;
+}
+
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab
+{
+  background: #fff;
+  color: #000;
+  border-top: 3px solid #32557f;
 }
 .grids {
   min-height: 700px;
@@ -316,65 +341,7 @@ margin-inline: 5.5%;
 .gridlinks li:hover {
     text-decoration: underline;
   }
-
-.seemore {
-  
-  height: 50px;
-  grid-column: span 4;
-  display: flex;
-  justify-content: center;
-}
-.seemorebtn {
-  display: inline-block;
-	padding: 5px 20px;
-	background: var(--primary-color);
-	color: rgb(206, 55, 55);
-	border-radius: 5px;
-	border: solid rgb(80, 80, 80) 1px;
-  box-shadow: 0.7px 1px 0 0 rgb(16, 16, 16);
-	height: 40px;
-  width: 100px;
-	opacity: 0.7;
-  
-  vertical-align: middle;
-  
-}
-
-
-.wrapper3 {
-  height: 450px;
-  background: linear-gradient(90deg, rgb(242, 242, 1) 0%, rgb(251, 117, 1) 42%, rgb(239, 1, 1) 100%);
-  --mask:
-    radial-gradient(43.50px at 50% 61.50px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
-    radial-gradient(43.50px at 50% -31.5px,#0000 99%,#000 101%) 50% 30px/120px 100% repeat-x;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-  padding: 140px;
-  display: flex;
-  justify-content: center;
-}
-.kidsbtn {
-  display: flex;
-  justify-content: center;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.kidsbtn2  {
-  background-color: #fff;
-font-family: 'Poppins', ;
-color: linear-gradient(90deg, rgb(255, 238, 0) 0%, rgb(10, 1, 6) 42%, rgb(142, 3, 3) 100%);
-height: 60.5px;
-width: 132px;
-text-decoration: none;
-list-style: none;
-border-radius: 9px;
-font-size: 19px;
-margin-top: 30px;
-}
-
-
-@media screen and (max-width: 699px) {
+  @media screen and (max-width: 699px) {
   .gridimg {
     overflow: hidden;
     background-position-y: 70%;
@@ -459,7 +426,6 @@ margin-inline: 1%;
 
 }
 
-
   </style>
 </head>
 <body>
@@ -498,228 +464,297 @@ margin-inline: 1%;
     </div>
     
   </div>
-  <div class="outerwrap">
-    <div class="divs">
-      <div class="div1">
-        <h2> ESL Worksheets and Lesson Plans for English Teachers</h2>
+  <h2> ESL Worksheets and Lesson Plans for English Teachers</h2>
+<div class="warpper">
+  <input class="radio" id="one" name="group" type="radio" checked>
+  <input class="radio" id="two" name="group" type="radio">
+  <input class="radio" id="three" name="group" type="radio">
+  <input class="radio" id="four" name="group" type="radio">
+
+  <div class="tabs">
+    <label class="tab" id="one-tab" for="one">Primary</label>
+    <label class="tab" id="two-tab" for="two">Secondary</label>
+    <label class="tab" id="three-tab" for="three">Advanced</label>
+    <label class="tab" id="four-tab" for="four">Video Activities</label>
+    
+  </div>
+
+  <div class="panels">
+    <div class="panel" id="one-panel">
+      <div class="grids">
+        <div class="grid">
+          <div class="gridimg">
+            <img src="/IMAGES/routine.jpg" alt="image">
+          </div>
+          <div class="gridtext">
+            <h3>Routines and Frequency</h3>
+            <p class="levelp">A2/B1</p>
+            <p>Make sure your students have no problems speaking about their routines and habits with this 
+              comprehensive lesson on present simple and adverbs of frequency.</p>
+          </div>
+          <div class="gridlinks">
+            <ul>
+              <li><a href="/Powerpoint/Present Perfect Simple Continuous.pptx" target="_blank">PPT</a></li>
+                <li><a href="/IMAGES/Lesson plan - routine.pdf" target="_blank">Class plan</a></li>
+                <li><a href="/IMAGES/present-simple.pdf" target="_blank">Worksheet 1</a></li>
+                <li><a href="https://www.perfect-english-grammar.com/support-files/adverbs_of_frequency.pdf" target="_blank">Worksheet 2</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="gridimg">
+            <img src="/IMAGES/b1storywriting.jpeg" alt="image">
+          </div>
+          <div class="gridtext">
+            <h3>B1 Story Writing</h3>
+            <p class="levelp">A2/B1</p>
+            <p>Practice everything they need to get top marks in the
+              PET exam.
+              
+            </p>
+          </div>
+          <div class="gridlinks">
+            <ul>
+              <li><a href="/IMAGES/PET story writing - worksheet.pdf" target="_blank">Worksheet</a></li>
+                
+            </ul>
+          </div>
+        </div>
+
+
+
+        <div class="grid">
+          <div class="gridimg">
+            <img src="/IMAGES/destiny.jpeg" alt="image">
+          </div>
+          <div class="gridtext">
+            <h3>Present Tense - 3rd Person Singular</h3>
+            <p class="levelp">A2/B1</p>
+            <p>Use this lesson plan to practice that tricky 3rd person singular verb 
+              with a fun and interactive project.</p>
+          </div>
+          <div class="gridlinks">
+            <ul>
+              <li><a href="/IMAGES/Lesson Plan - 3rd Person Singular (present tense).pdf"target="_blank">Lesson plan</a></li>
+              <li><a href="http://www.allthingsgrammar.com/uploads/2/3/2/9/23290220/atg-worksheet-add-s-es-ies.pdf"target="_blank">Worksheet 1</a></li>
+              <li><a href="https://www.e-grammar.org/pdf/present-simple-exercise-third-person.pdf"target="_blank">Worksheet 2</a></li>
+              <li><a href="/IMAGES/storyboard.pdf"target="_blank">Storyboard</a></li>
+              <li><a href="https://www.youtube.com/watch?v=wEKLEeY_WeQ"target="_blank">Video</a></li>
+            </ul>
+          </div>
+        </div>
+
+
 
       </div>
-      <div class="div2">
-        <a href="/html/lessons.html" class="btn">Lessons</a>
-        <a href="/html/grammar-home.html" class="btn">Worksheets</a>
-        <a href="/html/blog-home.html" class="btn">Blog</a>
+    </div>
+
+
+    <div class="panel" id="two-panel">
+      <div class="grids">
+        <div class="grid">
+          <div class="gridimg">
+            <img src="/IMAGES/lucky luciano.jpeg" alt="image">
+          </div>
+          <div class="gridtext">
+            <h3>Crime and Wanted Poster</h3>
+            <p class="levelp">B2/B2+</p>
+            <p>This is a lesson focusing on crime vocabulary with reading and video comprehension.
+              It is based on the notorious gangster 'Lucky' Luciano. At the end, the students
+              will create their own wanted poster with their invented criminal.
+            </p>
+          </div>
+          <div class="gridlinks">
+            <ul>
+              <li><a href="/IMAGES/Crime - 'Lucky' Luciano.pdf" target="_blank">Worksheet</a></li>
+                <li><a href="https://www.youtube.com/watch?v=cihi3C3czbI">Video</a></li>
+             
+  
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="grid">
+          <div class="gridimg">
+            <img src="/IMAGES/formal-linkers.jpeg" alt="image">
+          </div>
+          <div class="gridtext">
+            <h3>Formal Linkers - B2</h3>
+            <p class="levelp">B2</p>
+            <p>A new worksheet for B2+ students to help them add more 
+              cohesion to their writing through the use of formal linkers 
+              and connectors. Download the handout and key below:</p>
+          </div>
+          <div class="gridlinks">
+            <ul>
+              <li><a href="/IMAGES/formal-linkers-2.docx" target="_blank">Worksheet</a></li>
+              <li><a href="/IMAGES/key-formal-linkers.docx" target="_blank">Key</a></li>
+         
+  
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="gridimg">
+            <img src="/IMAGES/essaywritingpic.jpeg" alt="image">
+          </div>
+          <div class="gridtext">
+            <h3>B2 Essay Writing</h3>
+            <p class="levelp">B2</p>
+            <p>A thorough presentation to practice paragraph structure, sentence structure
+              and linkers use.
+            </p>
+          </div>
+          <div class="gridlinks">
+            <ul>
+              <li><a href="/IMAGES/Essay sentence practice b2.pptx" target="_blank">PPT</a></li>
+          
+         
+  
+            </ul>
+          </div>
+        </div>
+
+
+
+        
       </div>
     </div>
-    <div class="latest">
-      <h3>Latest Lesson Plans:</h3>
-    </div>
-    <div class="grids">
-      <div class="grid">
-        <div class="gridimg">
-          <img src="/IMAGES/lucky luciano.jpeg" alt="image">
+
+
+    
+    <div class="panel" id="three-panel">
+      <div class="grids">
+        <div class="grid">
+          <div class="gridimg">
+            <img src="/IMAGES/weekend-off.jpeg" alt="image">
+          </div>
+          <div class="gridtext">
+            <h3>Inversions - A Weekend Off</h3>
+            <p class="levelp">C1/C2</p>
+            <p>This is a grammar lesson focusing on inversions based 
+              around the topic of the stresses of parenthood. Students 
+              read a text about new parents who get a weekend off, then 
+              transform the text using inversions.
+               Download the handout and teacher’s notes below.</p>
+          </div>
+          <div class="gridlinks">
+            <ul>
+              <li><a href="/IMAGES/a-weekend-off-teachers-notes (1).docx" target="_blank">Class Plan</a></li>
+              <li><a href="/IMAGES/a-weekend-off-student-handout (1).docx" target="_blank">Worksheet</a></li>
+              <li><a href="https://freeenglishlessonplans.com/wp-content/uploads/2022/03/Inverted-conditionals-1.pdf" target="_blank">Worksheet 2</a></li>
+                <li><a href="https://www.youtube.com/watch?v=gH6-nBwOwkA">Video</a></li>
+             
+  
+            </ul>
+          </div>
+        </div>
+        <div class="grid"><div class="gridimg">
+          <img src="/IMAGES/woodstock99.jpeg" alt="image">
         </div>
         <div class="gridtext">
-          <h3>Crime and Wanted Poster</h3>
-          <p class="levelp">B2/B2+</p>
-          <p>This is a lesson focusing on crime vocabulary with reading and video comprehension.
-            It is based on the notorious gangster 'Lucky' Luciano. At the end, the students
-            will create their own wanted poster with their invented criminal.
+          <h3>Report - Woodstock 99</h3>
+          <p class="levelp">B2/C1</p>
+          <p>
+            This lesson will cover how to write a report including the basic structure,
+               objective and useful expressions. Once familiar, the students will use a 
+               short documentary about the Woodstock 99 disaster concert to put 
+               what they have learned into practice. Rock on!
           </p>
         </div>
         <div class="gridlinks">
           <ul>
-            <li><a href="/IMAGES/Crime - 'Lucky' Luciano.pdf" target="_blank">Worksheet</a></li>
-              <li><a href="https://www.youtube.com/watch?v=cihi3C3czbI">Video</a></li>
-           
-
+            <li><a href="/IMAGES/lesson-plan-woodstock.pdf" target="_blank">Class Plan</a></li>
+            <li><a href="/IMAGES/C1 Report - Woodstock 99.pptx">PPT</a></li>
+            <li><a href="https://www.youtube.com/watch?v=gH6-nBwOwkA">Video</a></li>
+  
           </ul>
         </div>
       </div>
-      <div class="grid"><div class="gridimg">
-        <img src="/IMAGES/woodstock99.jpeg" alt="image">
-      </div>
-      <div class="gridtext">
-        <h3>Report - Woodstock 99</h3>
-        <p class="levelp">B2/C1</p>
-        <p>
-          This lesson will cover how to write a report including the basic structure,
-             objective and useful expressions. Once familiar, the students will use a 
-             short documentary about the Woodstock 99 disaster concert to put 
-             what they have learned into practice. Rock on!
-        </p>
-      </div>
-      <div class="gridlinks">
-        <ul>
-          <li><a href="/IMAGES/lesson-plan-woodstock.pdf" target="_blank">Class Plan</a></li>
-          <li><a href="/IMAGES/C1 Report - Woodstock 99.pptx">PPT</a></li>
-          <li><a href="https://www.youtube.com/watch?v=gH6-nBwOwkA">Video</a></li>
 
-        </ul>
+
+
       </div>
     </div>
 
-      <div class="grid">
-        <div class="gridimg">
-          <img src="/IMAGES/routine.jpg" alt="image">
+
+
+
+    <div class="panel" id="four-panel">
+      <div class="grids">
+        <div class="grid">
+          <div class="gridimg">
+            <img src="/IMAGES/elvis.jpeg" alt="image">
+          </div>
+          <div class="gridtext">
+            <h3>Elvis - Biography</h3>
+            <p class="levelp">B2</p>
+            <p>Watch this short biography on Elvis to get your students thinking and speaking.
+              Activity includes discussion tasks.</p>
+          </div>
+          <div class="gridlinks">
+            <ul>
+              <li><a href="/html/videos/elvis.html">See activity ►</a></li>
+  
+            </ul>
+          </div>
         </div>
-        <div class="gridtext">
-          <h3>Routines and Frequency</h3>
-          <p class="levelp">A2/B1</p>
-          <p>Make sure your students have no problems speaking about their routines and habits with this 
-            comprehensive lesson on present simple and adverbs of frequency.</p>
+  
+        <div class="grid">
+          <div class="gridimg">
+            <img src="/IMAGES/what-happens-next.jpg" alt="image">
+          </div>
+          <div class="gridtext">
+            <h3>What happens next... ?</h3>
+            <p class="levelp">A2/B1</p>
+            <p>Have fun with your students watching this compilation video where 
+              we pause right before the action and we ask: "What happens next??..." </p>
+          </div>
+          <div class="gridlinks">
+            <ul>
+              <li><a href="/html/videos/what-happens-next.html" >See activity ►</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="gridlinks">
-          <ul>
-            <li><a href="/Powerpoint/Present Perfect Simple Continuous.pptx" target="_blank">PPT</a></li>
-              <li><a href="/IMAGES/Lesson plan - routine.pdf" target="_blank">Class plan</a></li>
-              <li><a href="/IMAGES/present-simple.pdf" target="_blank">Worksheet 1</a></li>
-              <li><a href="https://www.perfect-english-grammar.com/support-files/adverbs_of_frequency.pdf" target="_blank">Worksheet 2</a></li>
-          </ul>
+  
+        <div class="grid">
+          <div class="gridimg">
+            <img src="/IMAGES/penguin.jpg" alt="image">
+          </div>
+          <div class="gridtext">
+            <h3>Nihlistic Penguin</h3>
+            <p class="levelp">C1</p>
+            <p>Watch a clip from this philosophical nature documentary to get your students thinking and speaking.
+              Activity includes discussion tasks.</p>
+          </div>
+          <div class="gridlinks">
+            <ul>
+              <li><a href="/html/videos/nihlist-penguin.html" >See activity ►</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="grid">
+          <div class="gridimg">
+            <img src="/IMAGES/grizzly.jpeg" alt="image">
+          </div>
+          <div class="gridtext">
+            <h3>Grizzly Man</h3>
+            <p class="levelp">C1</p>
+            <p>Watch a clip from this fascinating documentary that your students are sure to love.
+              Activity includes reading, video and discussion tasks. Activity duration: 30 minutes.</p>
+          </div>
+          <div class="gridlinks">
+            <li><a href="/html/videos/grizzly-man.html" >See activity ►</a></li>
+          </div>
         </div>
       </div>
-
-      <div class="grid">
-        <div class="gridimg">
-          <img src="/IMAGES/formal-linkers.jpeg" alt="image">
-        </div>
-        <div class="gridtext">
-          <h3>Formal Linkers - B2</h3>
-          <p class="levelp">B2</p>
-          <p>A new worksheet for B2+ students to help them add more 
-            cohesion to their writing through the use of formal linkers 
-            and connectors. Download the handout and key below:</p>
-        </div>
-        <div class="gridlinks">
-          <ul>
-            <li><a href="/IMAGES/formal-linkers-2.docx" target="_blank">Worksheet</a></li>
-            <li><a href="/IMAGES/key-formal-linkers.docx" target="_blank">Key</a></li>
-       
-
-          </ul>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="gridimg">
-          <img src="/IMAGES/weekend-off.jpeg" alt="image">
-        </div>
-        <div class="gridtext">
-          <h3>Inversions - A Weekend Off</h3>
-          <p class="levelp">C1/C2</p>
-          <p>This is a grammar lesson focusing on inversions based 
-            around the topic of the stresses of parenthood. Students 
-            read a text about new parents who get a weekend off, then 
-            transform the text using inversions.
-             Download the handout and teacher’s notes below.</p>
-        </div>
-        <div class="gridlinks">
-          <ul>
-            <li><a href="/IMAGES/a-weekend-off-teachers-notes (1).docx" target="_blank">Class Plan</a></li>
-            <li><a href="/IMAGES/a-weekend-off-student-handout (1).docx" target="_blank">Worksheet</a></li>
-            <li><a href="https://freeenglishlessonplans.com/wp-content/uploads/2022/03/Inverted-conditionals-1.pdf" target="_blank">Worksheet 2</a></li>
-              <li><a href="https://www.youtube.com/watch?v=gH6-nBwOwkA">Video</a></li>
-           
-
-          </ul>
-        </div>
-      </div>
+      
     </div>
-    
-     
-    <div class="seemore">
-      <button class="seemorebtn"><a href="/html/lessons.html">See more</a></button>
-    </div>
-
-    <div class="latest">
-      <h3>Latest Video Activities:</h3>
-    </div>
-
-    <div class="grids">
-      <div class="grid">
-        <div class="gridimg">
-          <img src="/IMAGES/elvis.jpeg" alt="image">
-        </div>
-        <div class="gridtext">
-          <h3>Elvis - Biography</h3>
-          <p class="levelp">B2</p>
-          <p>Watch this short biography on Elvis to get your students thinking and speaking.
-            Activity includes discussion tasks.</p>
-        </div>
-        <div class="gridlinks">
-          <ul>
-            <li><a href="/html/videos/elvis.html">See activity ►</a></li>
-
-          </ul>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="gridimg">
-          <img src="/IMAGES/what-happens-next.jpg" alt="image">
-        </div>
-        <div class="gridtext">
-          <h3>What happens next... ?</h3>
-          <p class="levelp">A2/B1</p>
-          <p>Have fun with your students watching this compilation video where 
-            we pause right before the action and we ask: "What happens next??..." </p>
-        </div>
-        <div class="gridlinks">
-          <ul>
-            <li><a href="/html/videos/what-happens-next.html" >See activity ►</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="gridimg">
-          <img src="/IMAGES/penguin.jpg" alt="image">
-        </div>
-        <div class="gridtext">
-          <h3>Nihlistic Penguin</h3>
-          <p class="levelp">C1</p>
-          <p>Watch a clip from this philosophical nature documentary to get your students thinking and speaking.
-            Activity includes discussion tasks.</p>
-        </div>
-        <div class="gridlinks">
-          <ul>
-            <li><a href="/html/videos/nihlist-penguin.html" >See activity ►</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="gridimg">
-          <img src="/IMAGES/grizzly.jpeg" alt="image">
-        </div>
-        <div class="gridtext">
-          <h3>Grizzly Man</h3>
-          <p class="levelp">C1</p>
-          <p>Watch a clip from this fascinating documentary that your students are sure to love.
-            Activity includes reading, video and discussion tasks. Activity duration: 30 minutes.</p>
-        </div>
-        <div class="gridlinks">
-          <li><a href="/html/videos/grizzly-man.html" >See activity ►</a></li>
-        </div>
-      </div>
-    </div>
-    
-
-    
-     
-    <div class="seemore">
-        <button class="seemorebtn"><a href="/html/lessons.html">See more</a></button>
-    </div>
-    
-    
-    
   </div>
-  <div class="wrapper3">
-    <div>
-      <h1>For Kids!</h1>
-      <h2>Discover worksheets and resources for Elementary and Nursery stage learners</h2>
-      <div class="kidsbtn">
-        <a href=""><button class="kidsbtn2">Let's go!</button></a>
-      </div>
-    </div>
-  </div> 
+</div>
+</body>
 </html>
