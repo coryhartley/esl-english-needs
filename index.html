@@ -185,7 +185,8 @@ h1:hover {
 	height: 500px;
 	overflow: hidden;
   background-image: url(/IMAGES/classdraw.png);
-  background-size: cover
+  background-size: cover;
+  
   
 	
 }
@@ -280,7 +281,8 @@ h2 {
 #one:checked ~ .panels #one-panel,
 #two:checked ~ .panels #two-panel,
 #three:checked ~ .panels #three-panel,
-#four:checked ~ .panels #four-panel
+#four:checked ~ .panels #four-panel,
+#five:checked ~ .panels #five-panel
  {
   display: block;
 }
@@ -288,7 +290,8 @@ h2 {
 #one:checked ~ .tabs #one-tab,
 #two:checked ~ .tabs #two-tab,
 #three:checked ~ .tabs #three-tab,
-#four:checked ~ .tabs #four-tab
+#four:checked ~ .tabs #four-tab,
+#five:checked ~ .tabs #five-tab
 {
   background: #fff;
   color: #000;
@@ -345,6 +348,21 @@ h2 {
 
 .gridlinks li:hover {
     text-decoration: underline;
+  }
+
+  .gridworksheet{
+    height: 380px;
+  border-radius: 6px;
+  border: solid black 2px;
+  box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.16);
+  display: grid;
+  padding-left: 70px;
+  
+  }
+
+  .gridworksheet img {
+    height: 373px;
+
   }
   @media screen and (max-width: 699px) {
   .gridimg {
@@ -476,12 +494,14 @@ margin-inline: 1%;
   <input class="radio" id="two" name="group" type="radio">
   <input class="radio" id="three" name="group" type="radio">
   <input class="radio" id="four" name="group" type="radio">
+  <input class="radio" id="five" name="group" type="radio">
 
   <div class="tabs">
     <label class="tab" id="one-tab" for="one">Primary</label>
     <label class="tab" id="two-tab" for="two">Secondary</label>
     <label class="tab" id="three-tab" for="three">Advanced</label>
     <label class="tab" id="four-tab" for="four">Video Activities</label>
+    <label class="tab" id="five-tab" for="five">Worksheets</label>
     
   </div>
 
@@ -759,7 +779,7 @@ margin-inline: 1%;
             <ul>
               <li><a href="/IMAGES/lesson-plan-woodstock.pdf" target="_blank">Class Plan</a></li>
               <li><a href="/IMAGES/C1 Report - Woodstock 99.pptx">PPT</a></li>
-              <li><a href="https://www.youtube.com/watch?v=gH6-nBwOwkA">Video</a></li>
+              <li><a href="https://www.youtube.com/watch?v=gH6-nBwOwkA" target="_blank">Video</a></li>
     
             </ul>
           </div>
@@ -871,6 +891,41 @@ margin-inline: 1%;
       </div>
       
     </div>
+    
+    
+    <div class="panel" id="five-panel">
+      <div class="grids">
+
+        <div class="gridworksheet">
+          <a href="/IMAGES/my morning routine cut stick 1.pdf" target="_blank"><img src="/IMAGES/my-morning-routine-1-cut-stick-thumbnail.png" alt="/"></a>
+        </div>
+    
+        <div class="gridworksheet">
+          <a href="/IMAGES/my morning sentence cuts portrait 2.pdf" target="_blank"><img src="/IMAGES/my-morning-routine-2-cut-stick-thumbnail.png" alt="/"></a>
+        </div>
+        <div class="gridworksheet">
+          <a href="/IMAGES/animal cut shapes pictures.pdf" target="_blank"><img src="/IMAGES/animal cut stick pictures thumbnail.png" alt="/"></a>
+        </div>
+        <div class="gridworksheet">
+          <a href="/IMAGES/summer clothes cut stick shapes pictures.pdf" target="_blank"><img src="/IMAGES/summer-clothes-cut-stick-pictures-thumbnail.png" alt="/"></a>
+        </div>
+        <div class="gridworksheet">
+          <a href="/IMAGES/my sports original.pdf" target="_blank"><img src="/IMAGES/my-sports-thumbnail.png" alt="/"></a>
+        </div>
+        <div class="gridworksheet">
+          <a href="/IMAGES/My Hobbies.pdf" target="_blank"><img src="/IMAGES/my-hobbies-thumbnail.png" alt="/"></a>
+        </div>
+        <div class="gridworksheet">
+          <a href="/IMAGES/My Morning Routine.pdf" target="_blank"><img src="/IMAGES/my-morning-routine-thumbnail2.png" alt="/"></a>
+          
+        </div>
+    </div>
+
+
+
+
+
+
   </div>
 </div>
 </body>
